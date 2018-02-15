@@ -1,0 +1,33 @@
+/*------------------------------------*\
+  #BASE-PAGE
+\*------------------------------------*/
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--color-neutral-90);
+  font: 400 var(--font-size-base) var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  line-height: 1.5em;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--background) url('../images/bg-page.png') repeat-x;
+  background-size: 75%;
+
+  @media (--breakpoint-30) {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing);
+  }
+}

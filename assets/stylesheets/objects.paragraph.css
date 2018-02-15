@@ -1,0 +1,14 @@
+/*------------------------------------*\
+  #OBJECTS-PARAGRAPH
+\*------------------------------------*/
+
+.paragraph--lead {
+  color: #aaa0b5;
+  font-size: var(--font-size-50);
+}
+
+.paragraph--small {
+  color: var(--color-neutral-50);
+  font-size: var(--font-size-20);
+  line-height: 1.5em;
+}

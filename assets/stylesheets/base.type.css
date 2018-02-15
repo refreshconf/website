@@ -1,0 +1,124 @@
+/*------------------------------------*\
+  #BASE-TYPE
+\*------------------------------------*/
+
+/*
+ * Headings
+ */
+h1, h2, legend, h3, h4, h5, h6 {
+  color: var(--color-primary-50);
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0 0 0.75em 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2,
+legend {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+
+/*
+ * Paragraphs
+ */
+p {
+  margin: 0 auto var(--spacing) auto;
+}
+
+
+/*
+ * Links
+ */
+a {
+  color: var(--color-primary-50);
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-primary-30);
+
+  &:hover { color: var(--color-primary-70); }
+}
+
+
+/*
+ * Other
+ */
+small {
+  color: var(--color-neutral-50);
+  font-size: var(--font-size-20);
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+code, pre {
+  font-family: 'courier new', monospace;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+abbr {
+  border-bottom: 1px dotted var(--color-neutral-50);
+}
+
+del {
+  text-decoration: line-through;
+}
+
+mark {
+  background: color(yellow alpha(-50%));
+}
+
+figure {
+  margin: 0;
+}
+
+hr {
+  background-color: transparent;
+  border: solid var(--color-neutral-10);
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 2.5rem 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dd {
+  margin: .5rem 0 1.5rem 0;
+}

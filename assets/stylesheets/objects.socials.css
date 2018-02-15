@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  #OBJECTS-SOCIALS
+\*------------------------------------*/
+
+.o-socials {
+
+  & a {
+    border: 0;
+    color: var(--color-secondary-50);
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-right: 1.5rem;
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  & svg {
+    display: inline-block;
+    fill: var(--color-secondary-50);
+    height: 2.5rem;
+    vertical-align: middle;
+    width: 2.5rem;
+  }
+}

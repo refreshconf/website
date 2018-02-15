@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #LAYOUT-HEADER
+\*------------------------------------*/
+
+.l-content {
+  width: 100%;
+  padding: var(--spacing);
+
+  @media (--breakpoint-30) {
+    lost-column: 6/12 auto 0;
+    padding: calc(var(--spacing) * 2) calc(var(--spacing) * 2) var(--spacing) calc(var(--spacing) * 2);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  @media (--breakpoint-40) {
+    padding: calc(var(--spacing) * 3) calc(var(--spacing) * 3) calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  }
+}

@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  #OBJECTS-LOGOS
+\*------------------------------------*/
+
+.o-logos {
+  list-style: none;
+
+  @media (--breakpoint-10) {
+    lost-utility: clearfix;
+    display: flex;
+    flex-flow: wrap;
+    /*justify-content: center;*/
+  }
+}
+
+  .o-logos__item {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: var(--spacing);
+
+    @media (--breakpoint-10) {
+      lost-column: 1/2;
+    }
+
+    @media (--breakpoint-20) {
+      lost-column: 1/3;
+    }
+
+    @media (--breakpoint-30) {
+      lost-column: 1/2;
+    }
+
+    @media (--breakpoint-40) {
+      lost-column: 1/3;
+    }
+
+    & a {
+      opacity: 0.3;
+      height: 4rem;
+      width: 9rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: auto;
+
+      display: block;
+      filter: grayscale(100%);
+      border: 0;
+      text-decoration: none;
+      transition: opacity 200ms var(--bezier-a);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .o-logos__item--small a  {
+    width: 7rem;
+  }

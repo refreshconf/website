@@ -1,0 +1,34 @@
+/*------------------------------------*\
+  #UTILITIES-GLOBAL
+\*------------------------------------*/
+
+.u-display-none { display: none !important; }
+
+.u-visibility-hidden { visibility: hidden !important; }
+
+.u-text-align-left { text-align: left; }
+
+.u-text-align-right { text-align: right; }
+
+.u-text-align-center { text-align: center; }
+
+.u-float-left { float: left; }
+
+.u-float-right { float: right; }
+
+.u-spacing {
+  margin-bottom: var(--spacing);
+}
+
+.u-uppercase {
+  letter-spacing: 8px;
+  opacity: 0.6;
+  font-size: var(--font-size-20);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.u-font-color-sec {
+  color: var(--color-secondary-50);
+  margin-bottom: .25rem;
+}
