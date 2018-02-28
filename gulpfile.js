@@ -4,7 +4,6 @@ var postcss = require('gulp-postcss')
 var cssnano = require('gulp-cssnano')
 var atImport = require('postcss-import')
 var cssnext = require('postcss-cssnext')
-var nunjucks = require('gulp-nunjucks')
 var browserSync = require('browser-sync').create()
 var modRewrite  = require('connect-modrewrite')
 var del = require('del');
@@ -42,7 +41,6 @@ gulp.task('clean', function(cb) {
 
 gulp.task('html', () =>
   gulp.src('src/**/*.html')
-   .pipe(nunjucks.compile())
    .pipe(gulp.dest('dist'))
 )
 
@@ -71,7 +69,7 @@ gulp.task("css", function() {
       }
     }),
   ]
-  gulp.src(['src/assets/stylesheets/styles.css', 'src/assets/stylesheets/styleguide.css'])
+  gulp.src(['src/assets/stylesheets/styles.css'])
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(cssnano())
