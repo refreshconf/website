@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 .c-paragraph--large {
+  color: #aaa0b5;
   font-size: var(--font-size-50);
   line-height: var(--line-height-30);
   font-weight: 300;
