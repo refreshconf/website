@@ -9,6 +9,7 @@
 }
 
 html {
+  background: #f5f4f5;
   color: var(--color-neutral-90);
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-default);

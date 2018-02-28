@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 .c-heading {
+  color: var(--color-primary-50);
   font-family: var(--font-family-heading);
   font-size: var(--font-size-60);
   line-height: var(--line-height-default);

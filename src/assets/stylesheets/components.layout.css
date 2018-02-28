@@ -14,7 +14,7 @@
  * Set up a row for full width styling
  */
 .c-layout__row {
-
+  padding: var(--space-50) 0;
 }
 
 .c-layout__row--full-height {
@@ -35,8 +35,8 @@
   color: var(--color-white);
 }
 
-.c-layout__row--neutral {
-  background: var(--color-neutral-10);
+.c-layout__row--white {
+  background: var(--color-white);
 }
 
 .c-layout__row--line {

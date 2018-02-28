@@ -6,6 +6,7 @@
   font-size: var(--font-size-50);
   line-height: var(--line-height-30);
   font-weight: 300;
+  max-width: 640px;
 }
 
 .c-paragraph--small {
