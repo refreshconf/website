@@ -3,44 +3,27 @@
 \*------------------------------------*/
 
 .o-logos {
+  background: var(--color-secondary-50);
   list-style: none;
+  lost-utility: clearfix;
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 -2rem;
+  padding: 1.25rem 2rem 1.5rem;
 
-  @media (--breakpoint-10) {
-    lost-utility: clearfix;
-    display: flex;
-    flex-flow: wrap;
-    /*justify-content: center;*/
+  @media (--breakpoint-30) {
+    background: none;
   }
 }
 
   .o-logos__item {
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: var(--spacing);
-
-    @media (--breakpoint-10) {
-      lost-column: 1/2;
-    }
-
-    @media (--breakpoint-20) {
-      lost-column: 1/3;
-    }
-
-    @media (--breakpoint-30) {
-      lost-column: 1/2;
-    }
-
-    @media (--breakpoint-40) {
-      lost-column: 1/3;
-    }
+    line-height: 2.25rem;
+    margin-right: var(--spacing);
 
     & a {
       opacity: 0.3;
-      height: 4rem;
-      width: 9rem;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
       margin-top: auto;
 
       display: block;
@@ -51,6 +34,14 @@
 
       &:hover {
         opacity: 1;
+      }
+    }
+    & img {
+      display: block;
+      max-height: 2rem;
+
+      @media (--breakpoint-30) {
+        max-height: 2.25rem;
       }
     }
   }
