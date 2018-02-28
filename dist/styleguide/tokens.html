@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tokens - Style Guide</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/assets/stylesheets/styleguide.css" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/assets/images/favicon-32.ico">
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon-152.png">
+</head>
+
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="height:0;width:0;position:absolute;z-index:-1000;">
+
+  <!-- Example icon for the styleguide -->
+  <symbol viewBox="0 0 24 24" id="icon-print" preserveAspectRatio="xMinYMin">
+    <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+  </symbol>
+
+  <symbol viewBox="0 0 24 24" id="icon-arrow-forward" preserveAspectRatio="xMinYMin">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+  </symbol>
+
+  <!-- Add your own icons here -->
+
+</svg>
+
+
+  <div class="sg-wrapper">
+
+    <aside class="sg-aside">
+      <h2 class="u-spacing">Styleguide</h2>
+      <ul class="sg-navigation">
+        <li><a href="/styleguide/index.html">Getting Started</a></li>
+        <li><a href="/styleguide/guidelines.html">Guidelines</a></li>
+        <li><a href="/styleguide/tokens.html">Tokens</a></li>
+        <li><a href="/styleguide/base.html">Base</a></li>
+        <li>
+          <a href="/styleguide/components.html">Components</a>
+          <ul class="sg-navigation-sub">
+            <li><a href="/styleguide/components.html#Alert">Alert</a></li>
+            <li><a href="/styleguide/components.html#Button">Button</a></li>
+            <li><a href="/styleguide/components.html#Card">Card</a></li>
+            <li><a href="/styleguide/components.html#Form">Form</a></li>
+            <li><a href="/styleguide/components.html#FormCheckbox">FormCheckbox</a></li>
+            <li><a href="/styleguide/components.html#FormField">FormField</a></li>
+            <li><a href="/styleguide/components.html#FormInput">FormInput</a></li>
+            <li><a href="/styleguide/components.html#FormRadiobutton">FormRadiobutton</a></li>
+            <li><a href="/styleguide/components.html#FormSelect">FormRadiobutton</a></li>
+            <li><a href="/styleguide/components.html#FormTextarea">FormTextarea</a></li>
+            <li><a href="/styleguide/components.html#Grid">Grid</a></li>
+            <li><a href="/styleguide/components.html#Heading">Heading</a></li>
+            <li><a href="/styleguide/components.html#Icon">Icon</a></li>
+            <li><a href="/styleguide/components.html#Layout">Layout</a></li>
+            <li><a href="/styleguide/components.html#Tag">Tag</a></li>
+            <li><a href="/styleguide/components.html#List">List</a></li>
+            <li><a href="/styleguide/components.html#Media">Media</a></li>
+            <li><a href="/styleguide/components.html#Pagination">Pagination</a></li>
+            <li><a href="/styleguide/components.html#Panel">Panel</a></li>
+            <li><a href="/styleguide/components.html#Paragraph">Paragraph</a></li>
+          </ul>
+        </li>
+        <li><a href="/styleguide/utilities.html">Utilities</a></li>
+        <li><a href="/styleguide/templates.html">Templates</a></li>
+        <li><a href="/styleguide/support.html">Support</a></li>
+      </ul>
+    </aside>
+
+    <main class="sg-main">
+
+      
+
+  <h1 class="c-heading c-heading--large">Tokens</h1>
+  <p class="sg-lead">Tokens are the basic settings for components to build. They include colors, typographic rules, rounded borders sizes and so on.
+
+  <h2 class="sg-h2" id="typography">Typography</h2>
+  <p>Needs documentation, but check assets/stylesheets/tokens.css or the Sketch file.</p>
+
+  <h2 class="sg-h2" id="spacing">Spacing</h2>
+  <p>Needs documentation, but check assets/stylesheets/tokens.css or the Sketch file.</p>
+
+  <h2 class="sg-h2" id="colors">Colors</h2>
+  <h3 class="sg-h3">Primary</h3>
+  <div class="sg-colors sg-colors--primary">
+    <ul class="sg-colors__fill">
+      <li>var(--color-primary-30)</li>
+      <li class="sg-colors__item--large">var(--color-primary-50)</li>
+      <li>var(--color-primary-70)</li>
+    </ul>
+    <ul class="sg-colors__text">
+      <li>var(--color-primary-30)</li>
+      <li class="sg-colors__item--large">var(--color-primary-50)</li>
+      <li>var(--color-primary-70)</li>
+    </ul>
+  </div>
+
+  <h3 class="sg-h3">Secondary</h3>
+  <div class="sg-colors sg-colors--secondary">
+    <ul class="sg-colors__fill">
+      <li>var(--color-secondary-50)</li>
+    </ul>
+    <ul class="sg-colors__text">
+      <li>var(--color-secondary-50)</li>
+    </ul>
+  </div>
+
+  <h3 class="sg-h3">Neutral</h3>
+  <div class="sg-colors sg-colors--neutral">
+    <ul class="sg-colors__fill">
+      <li>var(--color-neutral-10)</li>
+      <li>var(--color-neutral-30)</li>
+      <li>var(--color-neutral-50)</li>
+      <li>var(--color-neutral-70)</li>
+      <li>var(--color-neutral-90)</li>
+    </ul>
+    <ul class="sg-colors__text">
+      <li>var(--color-neutral-10)</li>
+      <li>var(--color-neutral-30)</li>
+      <li>var(--color-neutral-50)</li>
+      <li>var(--color-neutral-70)</li>
+      <li>var(--color-neutral-90)</li>
+    </ul>
+  </div>
+
+  <h3 class="sg-h3">Success</h3>
+  <div class="sg-colors sg-colors--success">
+    <ul class="sg-colors__fill">
+      <li>var(--color-success-50)</li>
+      <li>var(--color-success-70)</li>
+    </ul>
+    <ul class="sg-colors__text">
+      <li>var(--color-success-50)</li>
+      <li>var(--color-success-70)</li>
+    </ul>
+  </div>
+
+  <h3 class="sg-h3">Alert</h3>
+  <div class="sg-colors sg-colors--alert">
+    <ul class="sg-colors__fill">
+      <li>var(--color-error-50)</li>
+      <li>var(--color-error-70)</li>
+    </ul>
+    <ul class="sg-colors__text">
+      <li>var(--color-error-50)</li>
+      <li>var(--color-error-70)</li>
+    </ul>
+  </div>
+
+  <h2 class="sg-h2" id="other">Other</h2>
+  <p>Needs documentation, but check assets/stylesheets/tokens.css or the Sketch file.</p>
+
+
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
