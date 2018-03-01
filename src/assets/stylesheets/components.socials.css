@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #COMPONENTS-SOCIALS
+\*------------------------------------*/
+
 .c-socials {
 
   & a {
@@ -5,7 +9,7 @@
     color: var(--color-secondary-50);
     font-size: var(--font-size-50);
     font-weight: 500;
-    margin-right: 1rem;
+    margin-right: 2rem;
     text-decoration: none;
   }
 

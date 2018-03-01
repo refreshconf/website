@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  #COMPONENTS-NAVIGATION
+\*------------------------------------*/
+
+.c-navigation {
+  float: right;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.c-navigation__item {
+  display: inline;
+}
+
+.c-navigation__link {
+  color: #AAA1B5;
+  font-size: var(--font-size-40);
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary-50);
+    text-decoration: underline;
+  }
+}
+
+.c-navigation__link--active {
+  color: var(--color-primary-50);
+}

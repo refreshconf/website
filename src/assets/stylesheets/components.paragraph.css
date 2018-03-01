@@ -10,6 +10,10 @@
   max-width: 640px;
 }
 
+.c-paragraph--medium {
+  font-size: var(--font-size-40);
+}
+
 .c-paragraph--small {
   font-size: var(--font-size-20);
   color: var(--color-neutral-50);

@@ -1,6 +1,10 @@
+/*------------------------------------*\
+  #COMPONENTS-MAILCHIMP
+\*------------------------------------*/
+
 #mc_embed_signup form#mc-embedded-subscribe-form {
   text-align: left;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 
   & input {
     border-color: #dad6df;
