@@ -31,7 +31,7 @@
   --font-size-50: 1.35rem;
   --font-size-60: 1.75rem;
   --font-size-70: 2.5rem;
-
+  --font-size-80: 4rem;
 
   /* Line-height */
   --line-height-default: 1em;
@@ -118,7 +118,7 @@
 
 
   /* Secondary */
-  --color-secondary-50: #B862D8;
+  --color-secondary-50: #F379AE;
 
 
   /* Success and positive colors */

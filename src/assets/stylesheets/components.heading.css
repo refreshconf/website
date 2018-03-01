@@ -6,6 +6,7 @@
   color: var(--color-primary-50);
   font-family: var(--font-family-heading);
   font-size: var(--font-size-60);
+  font-weight: 600;
   line-height: var(--line-height-default);
 }
 
@@ -21,4 +22,9 @@
 
 .c-heading--large {
   font-size: var(--font-size-70);
+}
+
+.c-heading--huge {
+  font-size: var(--font-size-80);
+  line-height: 6rem;
 }

@@ -9,7 +9,6 @@
 }
 
 html {
-  background: #f5f4f5;
   color: var(--color-neutral-90);
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-default);
@@ -22,6 +21,8 @@ html {
 }
 
 body {
+  background: #f5f4f5 url(../images/bg-page.png) repeat-x;
+  background-size: 75%;
   height: 100%;
   margin: 0;
   line-height: var(--line-height-default);

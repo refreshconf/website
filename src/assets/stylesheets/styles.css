@@ -30,7 +30,8 @@
 @import "components.media.css";
 @import "components.panel.css";
 @import "components.paragraph.css";
-
+@import "components.socials.css";
+@import "components.speakers.css";
 
 /**
  * #UTILITIES

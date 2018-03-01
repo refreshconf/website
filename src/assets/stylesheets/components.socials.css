@@ -1,0 +1,19 @@
+.c-socials {
+
+  & a {
+    border: 0;
+    color: var(--color-secondary-50);
+    font-size: var(--font-size-50);
+    font-weight: 500;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+
+  & svg {
+    display: inline-block;
+    fill: var(--color-secondary-50);
+    height: 2.5rem;
+    vertical-align: middle;
+    width: 2.5rem;
+  }
+}
