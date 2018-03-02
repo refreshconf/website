@@ -5,6 +5,7 @@
 .c-navigation {
   float: right;
   list-style: none;
+  margin-right: -1rem;
   margin-top: 1rem;
 }
 

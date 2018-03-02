@@ -1,0 +1,68 @@
+.c-header {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.c-header-image {
+  background: var(--color-primary-50);
+  display: grid;
+  grid-column: 1 / span 6;
+  grid-row: 1;
+  height: 100%;
+  margin-bottom: -2rem;
+  margin-top: 2rem;
+  padding: var(--space-inset-40);
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    background: linear-gradient(-225deg, var(--color-secondary-50) 0% , var(--color-primary-50) 100%);
+    content: "";
+    display: block;
+    opacity: .75;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.c-header-heading {
+  align-self: end;
+  color: var(--color-white);
+  font-size: var(--font-size-80);
+  line-height: 4.5rem;
+  z-index: 3;
+}
+
+.c-header-content {
+  background: var(--color-white);
+  box-shadow: 0 0 64px rgba(0,0,0,.15);
+  grid-column: 5 / span 6;
+  grid-row: 1;
+}
+
+.c-header-text {
+  grid-column: 7 / span 4;
+  grid-row: 1;
+  padding: var(--space-inset-40);
+}
+
+.c-header-term {
+  color: #AAA1B5;
+  font-size: var(--font-size-40);
+  font-weight: 500;
+  margin-bottom: .5rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.c-header-definition {
+  color: var(--color-primary-50);
+  font-size: var(--font-size-60);
+  font-weight: 500;
+  line-height: var(--line-height-30);
+  margin-bottom: 2rem;
+  margin-left: 0;
+}

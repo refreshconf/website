@@ -24,6 +24,7 @@
  */
 @import "components.grid.css";
 @import "components.grid-item.css";
+@import "components.header.css";
 @import "components.heading.css";
 @import "components.layout.css";
 @import "components.mailchimp.css";

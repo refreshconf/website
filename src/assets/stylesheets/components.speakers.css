@@ -6,7 +6,14 @@
   padding: 3rem 0;
 }
 
-.c-speakers--item {
+.c-speakers__link {
+  color: var(--color-secondary-50);
+  font-size: var(--font-size-50);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.c-speakers__item {
   background-position: 50% 50%;
   background-size: cover;
   margin-top: 2rem;
@@ -87,6 +94,7 @@
     & h3 {
       letter-spacing: 6px;
       opacity: .5;
+      padding-right: 4rem;
       text-transform: uppercase;
     }
 
