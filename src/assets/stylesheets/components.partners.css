@@ -1,0 +1,48 @@
+/*------------------------------------*\
+  #OBJECTS-LOGOS
+\*------------------------------------*/
+
+.c-partners {
+  align-items: center;
+  background: var(--color-secondary-50);
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  list-style: none;
+  lost-utility: clearfix;
+  margin: 4rem 0 1rem;
+
+  @media (--breakpoint-30) {
+    background: none;
+  }
+}
+
+  .c-partners__item {
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 2.25rem;
+    margin: 0 3rem;
+
+    & a {
+      border: 0;
+      display: block;
+      filter: grayscale();
+      text-decoration: none;
+      transition: filter .2s ease-out;
+
+      &:hover,
+      &:focus {
+        filter: none;
+      }
+    }
+
+    & img {
+      display: block;
+      max-height: 2rem;
+
+      @media (--breakpoint-30) {
+        max-height: 3.5rem;
+        max-width: 10rem;
+      }
+    }
+  }

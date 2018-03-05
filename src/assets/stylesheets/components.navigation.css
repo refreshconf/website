@@ -17,14 +17,14 @@
   color: #AAA1B5;
   font-size: var(--font-size-40);
   font-weight: 600;
-  padding: 1rem;
+  margin: 0 1rem;
   text-decoration: none;
   text-transform: lowercase;
 
   &:hover,
   &:focus {
     color: var(--color-primary-50);
-    text-decoration: underline;
+    border-bottom: 2px dashed var(--color-primary-50);
   }
 }
 

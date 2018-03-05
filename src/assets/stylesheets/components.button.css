@@ -1,0 +1,43 @@
+/*------------------------------------*\
+  #COMPONENTS-BUTTON
+\*------------------------------------*/
+
+.c-button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--font-size-40);
+  font-weight: 600;
+  line-height: 1.125rem;
+  margin-bottom: .5rem;
+  padding: 1rem 2rem;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.c-button--secondary {
+  background: #F6EBF0;
+  border: 2px solid transparent;
+  color: var(--color-secondary-50);
+
+  &:hover,
+  &:focus {
+    background: var(--color-white);
+    border: 2px dashed #F6EBF0;
+    color: var(--color-secondary-50);
+  }
+
+  &:visited {
+    color: var(--color-secondary-50);
+  }
+
+  &:active {
+    border: 2px solid var(--color-secondary-50);
+  }
+}
