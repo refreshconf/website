@@ -2,22 +2,19 @@
   #COMPONENTS-SOCIALS
 \*------------------------------------*/
 
-.c-socials {
+.c-socials__link {
+  border: 0;
+  color: var(--color-secondary-50);
+  font-size: var(--font-size-50);
+  font-weight: 500;
+  margin-right: 2rem;
+  text-decoration: none;
+}
 
-  & a {
-    border: 0;
-    color: var(--color-secondary-50);
-    font-size: var(--font-size-50);
-    font-weight: 500;
-    margin-right: 2rem;
-    text-decoration: none;
-  }
-
-  & svg {
-    display: inline-block;
-    fill: var(--color-secondary-50);
-    height: 2.5rem;
-    vertical-align: middle;
-    width: 2.5rem;
-  }
+.c-socials__icon {
+  display: inline-block;
+  fill: var(--color-secondary-50);
+  height: 2.5rem;
+  vertical-align: middle;
+  width: 2.5rem;
 }

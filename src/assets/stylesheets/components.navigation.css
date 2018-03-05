@@ -26,6 +26,10 @@
     color: var(--color-primary-50);
     border-bottom: 2px dashed var(--color-primary-50);
   }
+
+  &:active {
+    /* TODO Add CSS style */
+  }
 }
 
 .c-navigation__link--active {

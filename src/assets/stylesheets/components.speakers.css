@@ -36,7 +36,7 @@
   &:focus {
 
     & .c-speakers__img {
-      transform: rotate(4deg) scale(1.1) perspective(17px);
+      transform: rotate(4deg) scale(1.1);
     }
 
     & .c-speakers__speaker {
@@ -76,6 +76,17 @@
     @media(--breakpoint-30) {
       margin-top: 1rem;
     }
+
+    &:hover,
+    &:focus {
+      & .c-speakers__img {
+        transform: rotate(-6deg) scale(1.1);
+      }
+
+      &::before {
+        transform: rotate(4.5deg);
+      }
+    }
   }
 
   &:first-child::after {
@@ -88,6 +99,17 @@
   &:last-child {
     @media(--breakpoint-30) {
       margin-top: 0;
+    }
+
+    &:hover,
+    &:focus {
+      & .c-speakers__img {
+        transform: rotate(-2deg) scale(1.1);
+      }
+
+      &::before {
+        transform: rotate(6deg);
+      }
     }
   }
 
