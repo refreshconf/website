@@ -9,10 +9,9 @@
   background: var(--color-primary-50);
   background-position: 50% 50%;
   display: grid;
-  grid-column: 1 / span 9;
+  grid-column: 1 / span 10;
   grid-row: 1;
   margin-bottom: -2rem;
-  margin-top: 2rem;
   padding: var(--space-inset-50);
   position: relative;
   z-index: 1;
@@ -20,6 +19,7 @@
   @media(--breakpoint-20) {
     grid-column: 1 / span 5;
     height: 100%;
+    margin-top: 2rem;
   }
 
   &::after {
@@ -38,16 +38,21 @@
 .c-header-heading {
   align-self: end;
   color: var(--color-white);
-  font-size: var(--font-size-80);
+  font-size: var(--font-size-70);
   font-weight: 600;
-  line-height: 5.5rem;
+  line-height: 3.5rem;
   z-index: 3;
+
+  @media(--breakpoint-30) {
+    font-size: var(--font-size-80);
+    line-height: 5.5rem;
+  }
 }
 
 .c-header-content {
   background: var(--color-white);
   box-shadow: 0 0 64px rgba(0,0,0,.15);
-  grid-column: 2 / span 9;
+  grid-column: 1 / span 10;
   grid-row: 1 / span 2;
 
   @media(--breakpoint-20) {
@@ -57,12 +62,12 @@
 }
 
 .c-header-text {
-  grid-column: 2 / span 9;
+  grid-column: 1 / span 10;
   grid-row: 2;
   padding: var(--space-inset-50);
 
   @media(--breakpoint-20) {
-    grid-column: 6 / span 4;
+    grid-column: 6 / span 5;
     grid-row: 1;
   }
 }
