@@ -9,6 +9,7 @@
   width: 100%;
   display: grid;
   grid-column-gap: var(--space-default);
+  grid-row-gap: var(--space-default);
 
   @media(--breakpoint-30) {
     grid-column-gap: 96px;
@@ -19,6 +20,10 @@
 
 .c-grid--thirds {
 
+  @media(--breakpoint-10) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media(--breakpoint-20) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -28,17 +33,6 @@
 
   @media(--breakpoint-20) {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.c-grid--sidebar {
-
-  @media(--breakpoint-20) {
-    grid-template-columns: 1fr 15rem;
-  }
-
-  @media(--breakpoint-30) {
-    grid-template-columns: 1fr 20rem;
   }
 }
 

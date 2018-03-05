@@ -4,13 +4,12 @@
 
 .c-partners {
   align-items: center;
-  background: var(--color-secondary-50);
   display: flex;
   justify-content: center;
   flex-flow: wrap;
   list-style: none;
   lost-utility: clearfix;
-  margin: 4rem 0 1rem;
+  margin-top: 3rem;
 
   @media (--breakpoint-30) {
     background: none;
@@ -21,7 +20,7 @@
   display: flex;
   flex-flow: column nowrap;
   line-height: 2.25rem;
-  margin: 0 3rem;
+  margin: 1rem 3rem;
 }
 
 .c-partners__link {
