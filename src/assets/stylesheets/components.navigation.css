@@ -3,10 +3,15 @@
 \*------------------------------------*/
 
 .c-navigation {
+  display: none;
   float: right;
   list-style: none;
   margin-right: -1rem;
   margin-top: 1rem;
+
+  @media(--breakpoint-20) {
+    display: block;
+  }
 }
 
 .c-navigation__item {
