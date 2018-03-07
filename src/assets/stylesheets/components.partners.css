@@ -9,7 +9,6 @@
   flex-flow: wrap;
   list-style: none;
   lost-utility: clearfix;
-  margin-top: 3rem;
 
   @media (--breakpoint-30) {
     background: none;

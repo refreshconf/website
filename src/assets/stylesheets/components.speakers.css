@@ -2,10 +2,6 @@
   #COMPONENTS-SPEAKERS
 \*------------------------------------*/
 
-.c-speakers {
-  padding: 3rem 0;
-}
-
 .c-speakers__content {
   bottom: 0;
   color: var(--color-white);
