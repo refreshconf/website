@@ -7,7 +7,8 @@
 
 .c-header-image {
   background: var(--color-primary-50);
-  background-position: 50% 50%;
+  background-position: 50% 25%;
+  background-size: cover;
   display: grid;
   grid-column: 1 / span 10;
   grid-row: 1;
@@ -17,6 +18,7 @@
   z-index: 1;
 
   @media(--breakpoint-20) {
+    background-position: 50% 50%;
     grid-column: 1 / span 5;
     height: 100%;
     margin-top: 2rem;
@@ -83,7 +85,7 @@
 .c-header-definition {
   color: var(--color-primary-50);
   font-size: var(--font-size-50);
-  font-weight: 500;
+  font-weight: 600;
   line-height: var(--line-height-30);
   margin-bottom: 2rem;
   margin-left: 0;

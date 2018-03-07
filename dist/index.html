@@ -5,12 +5,165 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Home - Refresh Conference</title>
-  <meta name="description" content="nternational design & front-end conference in Groningen, NL on the 26th of October 2018.">
+  <title>Refresh Conference 2018</title>
+  <meta name="description" content="International design & front-end conference in Groningen, NL on the 26th of October 2018">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://www.refreshconference.nl/">
+  <meta name="twitter:site" content="@refreshcon">
+  <meta name="twitter:title" content="Refresh Conference 2018">
+  <meta name="twitter:description" content="International design & front-end conference in Groningen, NL on the 26th of October 2018">
+  <meta name="twitter:image" content="https://www.refreshconference.nl/assets/images/social-tw.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Refresh Conference 2018" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.refreshconference.nl/" />
+  <meta property="og:image" content="https://www.refreshconference.nl/assets/images/social-fb.jpg" />
+  <meta property="og:description" content="International design & front-end conference in Groningen, NL on the 26th of October 2018" />
+  <meta property="og:site_name" content="Refresh Conference 2018" />
 
   <link crossorigin="anonymous" href="/assets/stylesheets/styles.css" rel="stylesheet">
+
   <link href="/assets/images/favicon-32.png" rel="shortcut icon">
   <link href="/assets/images/favicon-512.png" rel="apple-touch-icon-precomposed">
+
+  <script>
+    initSmoothScrolling();
+
+    function initSmoothScrolling() {
+    if (isCssSmoothSCrollSupported()) {
+      document.getElementById('css-support-msg').className = 'supported';
+      return;
+    }
+
+    var duration = 1400;
+
+    var pageUrl = location.hash ?
+      stripHash(location.href) :
+      location.href;
+
+    delegatedLinkHijacking();
+    //directLinkHijacking();
+
+    function delegatedLinkHijacking() {
+      document.body.addEventListener('click', onClick, false);
+
+      function onClick(e) {
+        if (!isInPageLink(e.target))
+          return;
+
+        e.stopPropagation();
+        e.preventDefault();
+
+        jump(e.target.hash, {
+          duration: duration,
+          callback: function() {
+            setFocus(e.target.hash);
+          }
+        });
+      }
+    }
+
+    function directLinkHijacking() {
+      [].slice.call(document.querySelectorAll('a'))
+        .filter(isInPageLink)
+        .forEach(function(a) {
+          a.addEventListener('click', onClick, false);
+        });
+
+      function onClick(e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        jump(e.target.hash, {
+          duration: duration,
+        });
+      }
+
+    }
+
+    function isInPageLink(n) {
+      return n.tagName.toLowerCase() === 'a' &&
+        n.hash.length > 0 &&
+        stripHash(n.href) === pageUrl;
+    }
+
+    function stripHash(url) {
+      return url.slice(0, url.lastIndexOf('#'));
+    }
+
+    function isCssSmoothSCrollSupported() {
+      return 'scrollBehavior' in document.documentElement.style;
+    }
+
+    // Adapted from:
+    // https://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/
+    function setFocus(hash) {
+      var element = document.getElementById(hash.substring(1));
+
+      if (element) {
+        if (!/^(?:a|select|input|button|textarea)$/i.test(element.tagName)) {
+          element.tabIndex = -1;
+        }
+
+        element.focus();
+      }
+    }
+
+    }
+
+    function jump(target, options) {
+    var
+      start = window.pageYOffset,
+      opt = {
+        duration: options.duration,
+        offset: options.offset || 0,
+        callback: options.callback,
+        easing: options.easing || easeInOutQuad
+      },
+      distance = typeof target === 'string' ?
+      opt.offset + document.querySelector(target).getBoundingClientRect().top :
+      target,
+      duration = typeof opt.duration === 'function' ?
+      opt.duration(distance) :
+      opt.duration,
+      timeStart, timeElapsed;
+
+    requestAnimationFrame(function(time) {
+      timeStart = time;
+      loop(time);
+    });
+
+    function loop(time) {
+      timeElapsed = time - timeStart;
+
+      window.scrollTo(0, opt.easing(timeElapsed, start, distance, duration));
+
+      if (timeElapsed < duration)
+        requestAnimationFrame(loop)
+      else
+        end();
+    }
+
+    function end() {
+      window.scrollTo(0, start + distance);
+
+      if (typeof opt.callback === 'function')
+        opt.callback();
+    }
+
+    // Robert Penner's easeInOutQuad - http://robertpenner.com/easing/
+    function easeInOutQuad(t, b, c, d) {
+      t /= d / 2
+      if (t < 1) return c / 2 * t * t + b
+      t--
+      return -c / 2 * (t * (t - 2) - 1) + b
+    }
+
+    }
+  </script>
 </head>
 
 <body>
@@ -35,11 +188,13 @@
   <div class="c-layout">
       <div class="c-layout__container">
         <a href="#"><img src="./assets/images/logo-refreshconf.svg" alt=""></a>
+        <!--
         <ul class="c-navigation">
           <li class="c-navigation__item"><a href="#" class="c-navigation__link c-navigation__link--active">Home</a></li>
           <li class="c-navigation__item"><a href="#" class="c-navigation__link">Team</a></li>
           <li class="c-navigation__item"><a href="#" class="c-navigation__link">Contact</a></li>
         </ul>
+        -->
       </div>
     <div class="c-layout__row">
       <div class="c-layout__container">
@@ -59,12 +214,12 @@
               <dd class="c-header-definition">26th October 2018</dd>
               <dt class="c-header-term">Location</dt>
               <dd class="c-header-definition">Groningen, The Netherlands</dd>
-              <dt class="c-header-term">Price</dt>
-              <dd class="c-header-definition">Early bird &euro;75 ~ Normal &euro;135</dd>
+              <dt class="c-header-term">Speakers</dt>
+              <dd class="c-header-definition">12 international & local</dd>
               <dt class="c-header-term">Tickets</dt>
-              <dd class="c-header-definition">Buy them from 19th April</dd>
+              <dd class="c-header-definition">To be announced</dd>
             </dl>
-            <a href="#" class="c-button c-button--secondary">Get notified</a>
+            <a href="#curious" class="c-button c-button--secondary">Get notified</a>
           </div>
         </div>
       </div>
@@ -111,11 +266,10 @@
     <div class="c-layout__row c-layout__row--white">
       <div class="c-layout__container u-text-align-center">
         <h2 class="c-heading c-heading--large">Partners</h2>
-        <p class="c-paragraph--medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet <a href="#">placerat enim</a>.</p>
+        <p class="c-paragraph--medium">Would you consider sponsoring us? <a href="#">Contact us</a>.</p>
         <ul class="c-partners">
           <li class="c-partners__item"><a class="c-partners__link" href="https://fronteers.nl/" rel="external" target="_blank"><img class="c-partners__logo" src="./assets/images/logo-fronteers.png"></a></li>
           <li class="c-partners__item"><a class="c-partners__link" href="https://www.groningendigitalcity.com" rel="external" target="_blank"><img class="c-partners__logo" src="./assets/images/logo-gdc.png"></a></li>
-          <li class="c-partners__item"><a class="c-partners__link" href="https://hackerone.com" rel="external" target="_blank"><img class="c-partners__logo" src="./assets/images/logo-hackerone.svg"></a></li>
           <li class="c-partners__item"><a class="c-partners__link" href="https://wearespindle.com" rel="external" target="_blank"><img class="c-partners__logo" src="./assets/images/logo-spindle.svg"></a></li>
         </ul>
       </div>
@@ -131,7 +285,7 @@
     </div>
     <div class="c-layout__row c-layout__row--white">
       <div class="c-layout__container">
-        <h2 class="c-heading c-heading--large">Curious?</h2>
+        <h2 class="c-heading c-heading--large" id="curious">Curious?</h2>
         <p class="c-paragraph c-paragraph--large">
           Do you want to know when tickets will be available or what speakers are more to come? Sign up for the newsletter to get more info.
         </p>
@@ -177,7 +331,7 @@
     <div class="c-layout__row">
       <div class="c-layout__container u-text-align-center">
         <p>&copy; Refresh Conference 2018</p>
-        <p>Add this conference to your <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Refresh+Conference&dates=20181026T070000Z/20181026T160000Z&details=Design+and+Front-end+Conference&location=Groningen&trp=false&sprop=&sprop=name:" target="_blank" rel="nofollow">Google Calendar</a></p>
+        <!--<p>Add this conference to your <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Refresh+Conference&dates=20181026T070000Z/20181026T160000Z&details=Design+and+Front-end+Conference&location=Groningen&trp=false&sprop=&sprop=name:" target="_blank" rel="nofollow">Google Calendar</a></p>-->
       </div>
     </div>
   </div>

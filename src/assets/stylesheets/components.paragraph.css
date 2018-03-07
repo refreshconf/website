@@ -11,7 +11,8 @@
 }
 
 .c-paragraph--medium {
-  font-size: var(--font-size-40);
+  color: #90839f;
+  font-size: var(--font-size-50);
 }
 
 .c-paragraph--small {
