@@ -3,6 +3,10 @@
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 2, 1fr;
   margin-bottom: 2rem;
+
+  @media(--breakpoint-50) {
+    margin: 0 -4rem 2rem;
+  }
 }
 
 .c-header-image {
