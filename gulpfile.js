@@ -26,7 +26,6 @@ gulp.task('serve', ['build', 'watch'], function() {
 })
 
 gulp.task('watch', function() {
-  gulp.watch('src/**/*.html', ['html'])
   gulp.watch('src/**/*.css', ['css'])
   gulp.watch('src/assets/images/**/*', ['images'])
   gulp.watch('src/assets/media/**/*', ['media'])
