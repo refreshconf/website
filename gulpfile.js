@@ -33,10 +33,10 @@ gulp.task('watch', function() {
   gulp.watch('src/assets/scripts/**/*', ['scripts'])
 })
 
-gulp.task('build', ['css', 'scripts', 'images', 'media'])
+gulp.task('build', ['clean', 'css', 'scripts', 'images', 'media'])
 
 gulp.task('clean', function(cb) {
-  // return del('dist');
+  return del('dist');
 });
 
 gulp.task('images', () =>
