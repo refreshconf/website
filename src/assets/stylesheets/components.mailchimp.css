@@ -1,0 +1,30 @@
+/*------------------------------------*\
+  #COMPONENTS-MAILCHIMP
+\*------------------------------------*/
+
+#mc_embed_signup form#mc-embedded-subscribe-form {
+  text-align: left;
+  margin-bottom: 2.5rem;
+
+  & input {
+    border-color: #dad6df;
+    border-radius: 0;
+    font-family: var(--font-family-body);
+    font-size: 1.25rem;
+    height: 48px;
+    margin-bottom: .5rem;
+  }
+
+  & .button {
+    background: #dad6df;
+    border-radius: 0;
+    color: #636166;
+    font-family: var(--font-family-body);
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+      background: #ccc;
+    }
+  }
+}

@@ -1,24 +1,21 @@
 {
   "name": "refresh-conference",
-  "description": "Refresh Conference",
+  "description": "Refresh Conference 2018",
   "version": "1.0.0",
-  "author": "Refresh",
-  "license": "MIT",
+  "author": "Refresh Team",
   "main": "gulpfile.js",
   "devDependencies": {
-    "browser-sync": "^2.11.1",
-    "browserslist": "^1.1.1",
-    "gulp": "^3.9.1",
-    "gulp-connect-php": "0.0.7",
-    "gulp-cssnano": "^2.1.0",
-    "gulp-imagemin": "^2.4.0",
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-cssnano": "latest",
     "gulp-postcss": "^6.0.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-watch": "^4.3.5",
-    "gutil": "^1.6.4",
-    "imagemin-jpegoptim": "^4.1.0",
-    "lost": "^6.7.1",
+    "gulp-sourcemaps": "latest",
+    "lodash": "^4.17.4",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2"
+  },
+  "dependencies": {
+    "connect-modrewrite": "latest",
+    "del": "latest"
   }
 }
