@@ -15,7 +15,7 @@ gulp.task('default', ['clean', 'serve'])
 gulp.task('serve', ['build', 'watch'], function() {
   browserSync.init({
     server: {
-      baseDir: "./dist/",
+      baseDir: ".",
       serveStaticOptions: {
         extensions: ['html']
       }
@@ -33,30 +33,25 @@ gulp.task('watch', function() {
   gulp.watch('src/assets/scripts/**/*', ['scripts'])
 })
 
-gulp.task('build', ['html', 'css', 'scripts', 'images', 'media'])
+gulp.task('build', ['css', 'scripts', 'images', 'media'])
 
 gulp.task('clean', function(cb) {
   // return del('dist');
 });
 
-gulp.task('html', () =>
-  gulp.src('src/**/*.html')
-   .pipe(gulp.dest('dist'))
-)
-
 gulp.task('images', () =>
   gulp.src('src/assets/images/*')
-    .pipe(gulp.dest('dist/assets/images'))
+    .pipe(gulp.dest('dist/images'))
 )
 
 gulp.task('media', () =>
   gulp.src('src/assets/media/**/*')
-    .pipe(gulp.dest('dist/assets/media'))
+    .pipe(gulp.dest('dist/media'))
 )
 
 gulp.task('scripts', () =>
   gulp.src('src/assets/scripts/*')
-    .pipe(gulp.dest('dist/assets/scripts'))
+    .pipe(gulp.dest('dist/scripts'))
 )
 
 gulp.task("css", function() {
@@ -74,5 +69,5 @@ gulp.task("css", function() {
     .pipe(postcss(processors))
     .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/assets/stylesheets'))
+    .pipe(gulp.dest('dist/stylesheets'))
 })
