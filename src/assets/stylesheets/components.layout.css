@@ -9,12 +9,6 @@
   clear: both;
 }
 
-.c-layout--flex {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 
 /*
  * Set up a row for full width styling
@@ -73,4 +67,11 @@
     display: block;
     clear: both;
   }
+}
+
+.c-layout__container--bar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-inset-30);
 }

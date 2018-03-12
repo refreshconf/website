@@ -7,7 +7,7 @@
   bottom: 0;
   color: var(--color-white);
   display: none;
-  font-size: var(--font-size-40);
+  font-size: var(--font-size-30);
   font-weight: 500;
   letter-spacing: .5px;
   line-height: 3rem;
@@ -15,12 +15,20 @@
   width: 100%;
   z-index: 10000;
 
-  @media(--breakpoint-20) {
+  @media(--breakpoint-10) {
     display: block;
+  }
+
+  @media(--breakpoint-20) {
+    font-size: var(--font-size-40);
   }
 
   & p {
     margin-bottom: 0;
-    padding-right: 2rem;
+    padding-right: .5rem;
+
+    @media(--breakpoint-20) {
+      padding-right: 1rem;
+    }
   }
 }
