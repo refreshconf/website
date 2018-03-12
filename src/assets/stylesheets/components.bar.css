@@ -1,0 +1,26 @@
+/*------------------------------------*\
+  #COMPONENTS-BUTTON
+\*------------------------------------*/
+
+.c-bar {
+  background: var(--color-primary-50);
+  bottom: 0;
+  color: var(--color-white);
+  display: none;
+  font-size: var(--font-size-40);
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 3rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+
+  @media(--breakpoint-20) {
+    display: block;
+  }
+
+  & p {
+    margin-bottom: 0;
+    padding-right: 2rem;
+  }
+}

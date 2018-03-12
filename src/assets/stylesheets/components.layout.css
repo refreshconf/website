@@ -9,6 +9,12 @@
   clear: both;
 }
 
+.c-layout--flex {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /*
  * Set up a row for full width styling

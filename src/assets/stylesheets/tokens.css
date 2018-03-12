@@ -75,12 +75,12 @@
   --space-stack-40: 0 0 32px 0;
   --space-stack-50: 0 0 64px 0;
 
-  --space-inset-default: 16px 16px 0.1px 16px;
-  --space-inset-10: 4px 4px 0.1px 4px;
-  --space-inset-20: 8px 8px 0.1px 8px;
-  --space-inset-30: 16px 16px 0.1px 16px;
-  --space-inset-40: 32px 32px 16px 32px;
-  --space-inset-50: 64px 64px 48px 64px;
+  --space-inset-default: 16px;
+  --space-inset-10: 4px;
+  --space-inset-20: 8px;
+  --space-inset-30: 16px;
+  --space-inset-40: 32px;
+  --space-inset-50: 64px;
 
   --space-squish-10: 4px 8px;
   --space-squish-20: 8px 16px;
