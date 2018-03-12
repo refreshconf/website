@@ -28,3 +28,5 @@
 .u-line-through {
   text-decoration: line-through;
 }
+
+.u-nowrap { white-space: nowrap; }
