@@ -69,6 +69,7 @@ abbr {
 }
 
 del {
+  opacity: .5;
   text-decoration: line-through;
 }
 
