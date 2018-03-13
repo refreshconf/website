@@ -25,6 +25,7 @@
 
   & p {
     margin-bottom: 0;
+    margin-right: auto;
     padding-right: .5rem;
 
     @media(--breakpoint-20) {
