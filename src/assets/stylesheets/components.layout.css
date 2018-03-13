@@ -74,4 +74,8 @@
   display: flex;
   justify-content: space-between;
   padding: var(--space-inset-30);
+
+  @media (--breakpoint-20) {
+    padding: var(--space-inset-30) var(--space-inset-40);
+  }
 }
