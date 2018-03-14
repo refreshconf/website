@@ -67,6 +67,21 @@
   }
 }
 
+.c-header-link {
+  border-bottom: 2px dotted #c8a9ed;
+  color: var(--color-primary-50);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+
+  }
+
+  &:visited {
+    color: var(--color-primary-50);
+  }
+}
+
 .c-header-text {
   grid-column: 1 / span 10;
   grid-row: 2;

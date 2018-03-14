@@ -9,12 +9,22 @@
   font-weight: 500;
   margin-right: 2rem;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: var(--color-secondary-50);
+  }
 }
 
 .c-socials__icon {
   display: inline-block;
   fill: var(--color-secondary-50);
   height: 2.5rem;
+  margin-right: .25rem;
   vertical-align: middle;
   width: 2.5rem;
 }
