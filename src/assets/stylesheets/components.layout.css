@@ -39,6 +39,17 @@
   background: var(--color-white);
 }
 
+.c-layout__row--icon {
+
+
+  @media(--breakpoint-50) {
+    background-image: url('./../../dist/images/refresh-groningen.svg');
+    background-position: right 20% top 50%;
+    background-repeat: no-repeat;
+    background-size: 33rem;
+  }
+}
+
 .c-layout__row--line {
   border-bottom: 1px solid var(--color-neutral-10);
 }
