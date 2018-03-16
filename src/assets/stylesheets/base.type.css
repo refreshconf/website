@@ -28,6 +28,7 @@ p {
 a {
   color: var(--color-primary-50);
   cursor: pointer;
+  font-weight: 500;
 
   &:visited {
     color: var(--color-neutral-50);
@@ -74,7 +75,7 @@ del {
 }
 
 mark {
-  background: color(yellow alpha(-50%));
+  background: color(yellow alpha(-70%));
 }
 
 figure {

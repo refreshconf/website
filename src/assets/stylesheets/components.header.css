@@ -71,6 +71,7 @@
 .c-header-link {
   border-bottom: 2px dotted #c8a9ed;
   color: var(--color-primary-50);
+  font-weight: 600;
   text-decoration: none;
 
   &:hover,

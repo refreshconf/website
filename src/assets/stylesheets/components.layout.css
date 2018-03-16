@@ -50,6 +50,26 @@
   }
 }
 
+.c-layout__row--skyline {
+
+
+  @media(--breakpoint-30) {
+    background-image: url('./../../dist/images/groningen_skyline.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 5rem;
+  }
+
+  @media(--breakpoint-40) {
+    padding-bottom: 7rem;
+  }
+
+  @media(--breakpoint-50) {
+    padding-bottom: 9rem;
+  }
+}
+
 .c-layout__row--line {
   border-bottom: 1px solid var(--color-neutral-10);
 }
