@@ -5,19 +5,53 @@
 .c-media {
   margin: var(--space-stack-default);
   position: relative;
+  text-align: center;
   width: 100%;
 }
 
-  .c-media__image {
+.c-media__image {
+  display: block;
+  max-width: 100%;
+}
+
+.c-media--overlay {
+  overflow: hidden;
+
+  &::after {
+    background-image: linear-gradient(135deg, var(--color-secondary-50) 0%, #5F2BD5 100%);
+    content: "";
     display: block;
-    max-width: 100%;
+    filter: saturate(1.25);
+    opacity: .70;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+.c-media__caption {
+  color: var(--color-neutral-50);
+  font-size: var(--font-size-20);
+}
+
+.c-media--right {
+
+  @media(--breakpoint-20) {
+    float: right;
+    margin-left: 3rem;
+    width: 350px;
   }
 
-  .c-media__caption {
-    color: var(--color-neutral-50);
-    font-size: var(--font-size-20);
+  @media(--breakpoint-30) {
+    width: 400px;
   }
 
+  @media(--breakpoint-40) {
+    width: 500px;
+  }
+}
 
 .c-media--video {
   height: 0;

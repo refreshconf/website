@@ -17,7 +17,7 @@
   grid-column: 1 / span 10;
   grid-row: 1;
   margin-bottom: -2rem;
-  padding: var(--space-inset-50);
+  padding: var(--space-inset-50) var(--space-inset-40);
   position: relative;
   z-index: 1;
 
@@ -26,6 +26,7 @@
     grid-column: 1 / span 5;
     height: 100%;
     margin-top: 2rem;
+    padding: var(--space-inset-50);
   }
 
   &::after {
@@ -67,14 +68,34 @@
   }
 }
 
+.c-header-link {
+  border-bottom: 2px dotted #c8a9ed;
+  color: var(--color-primary-50);
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+
+  }
+
+  &:visited {
+    color: var(--color-primary-50);
+  }
+}
+
 .c-header-text {
   grid-column: 1 / span 10;
   grid-row: 2;
-  padding: var(--space-inset-50);
+  padding: var(--space-inset-50) var(--space-inset-40);
 
   @media(--breakpoint-20) {
     grid-column: 6 / span 5;
     grid-row: 1;
+  }
+
+  @media(--breakpoint-30) {
+    padding: var(--space-inset-50);
   }
 }
 
