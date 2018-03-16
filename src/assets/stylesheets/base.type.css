@@ -30,10 +30,6 @@ a {
   cursor: pointer;
   font-weight: 500;
 
-  &:visited {
-    color: var(--color-neutral-50);
-  }
-
   &:hover {
     color: var(--color-primary-70);
   }
