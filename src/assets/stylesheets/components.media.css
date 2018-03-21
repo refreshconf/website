@@ -36,20 +36,39 @@
   font-size: var(--font-size-20);
 }
 
-.c-media--right {
+.c-media--left {
+
+  & .c-media__image {
+      width: 100%;
+  }
+
+  @media(--breakpoint-10) {
+    border-radius: 50%;
+    float: left;
+    margin-right: 3rem;
+    width: 250px;
+  }
 
   @media(--breakpoint-20) {
-    float: right;
-    margin-left: 3rem;
     width: 350px;
   }
+}
 
-  @media(--breakpoint-30) {
-    width: 400px;
+.c-media--right {
+
+  & .c-media__image {
+      width: 100%;
   }
 
-  @media(--breakpoint-40) {
-    width: 500px;
+  @media(--breakpoint-10) {
+    border-radius: 50%;
+    float: right;
+    margin-left: 3rem;
+    width: 250px;
+  }
+
+  @media(--breakpoint-20) {
+    width: 350px;
   }
 }
 

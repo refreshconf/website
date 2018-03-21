@@ -10,6 +10,13 @@
   max-width: 640px;
 }
 
+.c-paragraph--lead {
+  color: #aaa0b5;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
 .c-paragraph--medium {
   color: #90839f;
   font-size: var(--font-size-50);
