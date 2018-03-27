@@ -25,6 +25,10 @@
   }
 }
 
+.u-spacing--small {
+  margin-bottom: var(--space-10);
+}
+
 .u-line-through {
   text-decoration: line-through;
 }
