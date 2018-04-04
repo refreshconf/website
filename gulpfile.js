@@ -23,7 +23,7 @@ gulp.task('serve', ['build', 'watch'], function() {
     },
     open: false
   });
-  gulp.watch('dist/**/*').on('change', debouncedReload)
+  gulp.watch('/').on('change', debouncedReload)
 })
 
 gulp.task('watch', function() {
