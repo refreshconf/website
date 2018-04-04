@@ -1,0 +1,109 @@
+{% extends 'layout/layout.base.html' %}
+
+{% block content %}
+
+    <div class="c-layout__container">
+      <div class="c-header">
+        <div class="c-header-image" style="background-image: url('./dist/images/header-refresh.jpg')">
+          <h1 class="c-header-heading">
+            <span class="u-display-block">Design &</span>
+            <span class="u-display-block">Front-End</span>
+            Conference
+          </h1>
+        </div>
+        <div class="c-header-content">
+        </div>
+        <div class="c-header-text">
+          <dl>
+            <dt class="c-header-term">Date</dt>
+            <dd class="c-header-definition">Friday 26th of October, 2018</dd>
+            <dt class="c-header-term">Location</dt>
+            <dd class="c-header-definition"><a href="#location" class="c-header-link">Groningen, The Netherlands</a></dd>
+            <dt class="c-header-term">Speakers</dt>
+            <dd class="c-header-definition"><a href="#speakers" class="c-header-link">12 international & local</a></dd>
+            <dt class="c-header-term">Tickets</dt>
+            <dd class="c-header-definition"><span class="u-display-block"><del>Full price: &euro;235</del></span>Early birds: &euro;110</dd>
+          </dl>
+          <a href="https://www.eventbrite.com/e/refresh-conference-2018-tickets-43969993434" class="c-button c-button--secondary">Buy tickets</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="c-layout__row c-layout__row--white c-layout__row--icon">
+    <div class="c-layout__container">
+      <h2 class="c-heading c-heading--large">Our story</h2>
+      <p class="c-paragraph--large">We love to bring people together and share knowledge, and believe the time is right for an awesome conference about design & front-end development in Groningen.</p>
+    </div>
+  </div>
+
+
+  <div class="c-layout__row" id="speakers">
+    <div class="c-layout__container">
+      <h2 class="c-heading c-heading--large">Speakers</h2>
+      <p class="c-paragraph c-paragraph--large u-spacing">
+        The speakers attending the conference will be a combination of big names in the field as well as awesome locals who share our passion.
+      </p>
+      <div class="c-grid c-grid--thirds c-speakers u-spacing">
+        <a href="style-guide-driven-development.html" class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('./dist/images/sara_vieira.png')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Sara Vieira</h3>
+            <h4 class="c-speakers__subject">Style Guide Driven Development</h4>
+          </hgroup>
+        </a>
+        <a href="the-future-is-design.html" class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('./dist/images/auke_schotanus.png')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Auke Schotanus</h3>
+            <h4 class="c-speakers__subject"><span class="u-display-block">The future</span> <del>of</del> is design</h4>
+          </hgroup>
+        </a>
+        <div class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('./dist/images/speaker_tba.png')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">10 more speakers</h3>
+            <h4 class="c-speakers__subject">Stay tuned!</h4>
+          </hgroup>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-layout__row c-layout__row--white c-layout__row--skyline">
+    <div class="c-layout__container u-text-align-center">
+      <h2 class="c-heading c-heading--large">Partners</h2>
+      <p class="c-paragraph--medium u-spacing">Thanks to these awesome partners. We wouldn't be able to do this without you!</p>
+      <ul class="c-partners u-spacing">
+        <li class="c-partners__item"><a class="c-partners__link" href="https://fronteers.nl/" rel="external" target="_blank"><img class="c-partners__logo" src="./dist/images/logo-fronteers.png"></a></li>
+        <li class="c-partners__item"><a class="c-partners__link" href="https://www.groningendigitalcity.com" rel="external" target="_blank"><img class="c-partners__logo" src="./dist/images/logo-gdc.png"></a></li>
+        <li class="c-partners__item"><a class="c-partners__link" href="https://wearespindle.com" rel="external" target="_blank"><img class="c-partners__logo" src="./dist/images/logo-spindle.svg"></a></li>
+      </ul>
+      <p class="c-paragraph--medium u-spacing"> Want to help? <a href="mailto:hello@refreshconference.nl">Contact us</a>.</p>
+    </div>
+  </div>
+
+  <div class="c-layout__row" id="location">
+    <div class="c-layout__container">
+      <div class="c-header">
+        <div class="c-header-image" style="background-image: url('./dist/images/dot.jpg')">
+          <h2 class="c-header-heading">
+            Venue
+          </h2>
+        </div>
+        <div class="c-header-content">
+        </div>
+        <div class="c-header-text">
+          <h3 class="c-heading c-heading--large">DOT Groningen</h3>
+          <p class="c-paragraph c-paragraph--large">
+            A unique and futuristic, circular shaped venue in the cosy Ebbingekwartier, just outside the city centre of Groningen.
+          </p>
+          <p class="c-paragraph c-paragraph--medium">DOT Groningen has an awesome projection dome, super comfy chairs, and is easily reachable by foot, car and public transport.</p>
+          <a href="https://www.dotgroningen.nl/" rel="external" target="_blank">Website</a> &middot; <a href="https://goo.gl/maps/9vLozZpMWn12" rel="external" target="_blank">Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

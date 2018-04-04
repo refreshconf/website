@@ -8,6 +8,7 @@ var browserSync = require('browser-sync').create()
 var modRewrite  = require('connect-modrewrite')
 var del = require('del');
 var debounce = require('lodash/debounce');
+var nunjucks = require('gulp-nunjucks')
 var debouncedReload = debounce(browserSync.reload, 200)
 
 gulp.task('default', ['clean', 'serve'])
@@ -26,17 +27,24 @@ gulp.task('serve', ['build', 'watch'], function() {
 })
 
 gulp.task('watch', function() {
+  gulp.watch('src/**/*.html', ['html'])
   gulp.watch('src/**/*.css', ['css'])
   gulp.watch('src/assets/images/**/*', ['images'])
   gulp.watch('src/assets/media/**/*', ['media'])
   gulp.watch('src/assets/scripts/**/*', ['scripts'])
 })
 
-gulp.task('build', ['clean', 'css', 'scripts', 'images', 'media'])
+gulp.task('build', ['html', 'clean', 'css', 'scripts', 'images', 'media'])
 
 gulp.task('clean', function(cb) {
   return del('dist');
 });
+
+gulp.task('html', () =>
+  gulp.src('src/**/*.html')
+   .pipe(nunjucks.compile())
+   .pipe(gulp.dest(''))
+)
 
 gulp.task('images', () =>
   gulp.src('src/assets/images/*')
