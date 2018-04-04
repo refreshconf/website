@@ -41,7 +41,7 @@ gulp.task('clean', function(cb) {
 });
 
 gulp.task('html', () =>
-  gulp.src('src/**/*.html')
+  gulp.src('src/*.html')
    .pipe(nunjucks.compile())
    .pipe(gulp.dest(''))
 )
