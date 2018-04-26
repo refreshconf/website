@@ -1,0 +1,54 @@
+/*------------------------------------*\
+  #COMPONENTS-NAVIGATION
+\*------------------------------------*/
+
+.c-navigation {
+  background: white;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0, .1);
+  list-style: none;
+  padding: 1.5rem 0;
+  position: fixed;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  @media(--breakpoint-20) {
+    background: none;
+    box-shadow: none;
+    float: right;
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 0;
+    position: static;
+    width: auto;
+  }
+}
+
+.c-navigation__item {
+  display: inline;
+}
+
+.c-navigation__link {
+  color: #AAA1B5;
+  font-size: var(--font-size-40);
+  font-weight: 600;
+  margin: 0 1rem;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary-50);
+    border-bottom: 2px dashed var(--color-primary-50);
+  }
+
+  &:active {
+    /* TODO Add CSS style */
+  }
+}
+
+.c-navigation__link--active {
+  color: var(--color-primary-50);
+}
