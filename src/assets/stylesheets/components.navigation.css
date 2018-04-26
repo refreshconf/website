@@ -3,14 +3,26 @@
 \*------------------------------------*/
 
 .c-navigation {
-  display: none;
-  float: right;
+  background: white;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0, .1);
   list-style: none;
+  padding: 1.5rem 0;
+  position: fixed;
+  margin-left: -1rem;
   margin-right: -1rem;
-  margin-top: 1rem;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 
   @media(--breakpoint-20) {
-    display: block;
+    background: none;
+    box-shadow: none;
+    float: right;
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 0;
+    position: static;
+    width: auto;
   }
 }
 
