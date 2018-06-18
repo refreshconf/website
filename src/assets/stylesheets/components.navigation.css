@@ -6,7 +6,7 @@
   background: white;
   box-shadow: 0 1px 6px 0 rgba(0,0,0, .1);
   list-style: none;
-  padding: 1.5rem 0;
+  padding: 1.5rem .5rem;
   position: fixed;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -32,9 +32,9 @@
 
 .c-navigation__link {
   color: #AAA1B5;
-  font-size: var(--font-size-40);
+  font-size: var(--font-size-30);
   font-weight: 600;
-  margin: 0 1rem;
+  margin: 0 .5rem;
   text-decoration: none;
   text-transform: lowercase;
 
@@ -46,6 +46,14 @@
 
   &:active {
     /* TODO Add CSS style */
+  }
+
+  @media(--breakpoint-10) {
+    font-size: var(--font-size-40);
+  }
+
+  @media(--breakpoint-20) {
+    margin: 0 1rem;
   }
 }
 
