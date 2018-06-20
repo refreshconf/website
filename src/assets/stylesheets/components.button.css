@@ -7,11 +7,11 @@
   display: inline-block;
   font-size: var(--font-size-45);
   font-weight: 600;
-  line-height: 1.125rem;
+  line-height: 1.5rem;
   padding: 1rem 2rem;
   text-align: left;
   text-decoration: none;
-  vertical-align: middle;
+  vertical-align: center;
 
   &:hover,
   &:focus,
