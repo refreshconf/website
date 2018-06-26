@@ -28,6 +28,18 @@
 
 .c-navigation__item {
   display: inline;
+
+  &:last-child {
+    display: none;
+
+    & .c-navigation__link {
+      color: var(--color-primary-50);
+    }
+
+    @media(--breakpoint-20) {
+      display: inline;
+    }
+  }
 }
 
 .c-navigation__link {
@@ -53,6 +65,10 @@
   }
 
   @media(--breakpoint-20) {
+    margin: 0 .75rem;
+  }
+
+  @media(--breakpoint-30) {
     margin: 0 1rem;
   }
 }
