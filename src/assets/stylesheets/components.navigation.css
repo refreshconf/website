@@ -37,8 +37,11 @@
       color: var(--color-primary-50);
     }
 
-    @media(--breakpoint-20) {
+    @media(--breakpoint-10) {
       display: inline;
+    }
+
+    @media(--breakpoint-20) {
       margin-top: 0;
     }
   }
