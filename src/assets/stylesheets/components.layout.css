@@ -102,12 +102,12 @@
 }
 
 .c-layout__container--bar {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: var(--space-inset-30);
+  padding: var(--space-inset-40);
 
   @media (--breakpoint-20) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     padding: var(--space-inset-30) var(--space-inset-40);
   }
 }

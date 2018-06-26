@@ -30,7 +30,8 @@
   display: inline;
 
   &:last-child {
-    display: none;
+    display: block;
+    margin-top: 1rem;
 
     & .c-navigation__link {
       color: var(--color-primary-50);
@@ -38,6 +39,7 @@
 
     @media(--breakpoint-20) {
       display: inline;
+      margin-top: 0;
     }
   }
 }
