@@ -49,6 +49,7 @@
   }
 
   @media (--breakpoint-50) {
-    max-height: 4rem;
+    max-height: 4.5rem;
+    max-width: 12rem;
   }
 }
