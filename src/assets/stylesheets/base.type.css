@@ -18,7 +18,6 @@ h1, h2, legend, h3, h4, h5, h6 {
  */
 p {
   margin: var(--space-stack-default);
-  max-width: 65ch;
   line-height: var(--line-height-30);
 }
 
