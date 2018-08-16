@@ -2,26 +2,30 @@
   #COMPONENTS-PARAGRAPH
 \*------------------------------------*/
 
+.c-paragraph--large,
+.c-paragraph--lead,
+.c-paragraph--medium {
+  color: #9b91a6;
+  max-width: 65ch;
+}
+
+.c-paragraph--large,
+.c-paragraph--lead {
+  font-weight: 400;
+}
+
 .c-paragraph--large {
-  color: #aaa0b5;
   font-size: var(--font-size-60);
   line-height: var(--line-height-30);
-  font-weight: 400;
-  max-width: 640px;
 }
 
 .c-paragraph--lead {
-  color: #aaa0b5;
   font-size: 1.5rem;
-  font-weight: 400;
   margin-bottom: 24px;
-  max-width: 65ch;
 }
 
 .c-paragraph--medium {
-  color: #90839f;
   font-size: var(--font-size-50);
-  max-width: 65ch;
 }
 
 .u-text-align-center .c-paragraph--medium {

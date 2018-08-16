@@ -51,6 +51,7 @@
   color: #AAA1B5;
   font-size: var(--font-size-30);
   font-weight: 600;
+  outline: none;
   margin: 0 .5rem;
   text-decoration: none;
   text-transform: lowercase;

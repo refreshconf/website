@@ -6,7 +6,13 @@
 
 .u-display-block { display: block; }
 
-.u-visibility-hidden { visibility: hidden !important; }
+.u-visibility-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+ }
 
 .u-text-align-left { text-align: left; }
 

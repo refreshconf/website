@@ -30,10 +30,23 @@
 }
 
 a.c-schedule-row {
-  &:hover,
-  &:focus {
+  outline: none;
+
+  &:hover {
     background: #F5F4F5;
     color: var(--color-neutral-90);
+
+    & .c-schedule-time {
+      color: var(--color-neutral-90);
+    }
+  }
+
+  &:focus {
+    box-shadow: inset 6px 0 0 0 var(--color-primary-50);
+
+    & .c-schedule-time {
+      color: var(--color-neutral-90);
+    }
   }
 }
 

@@ -44,24 +44,27 @@
 </head>
 
 <body>
+  <a class="u-visibility-hidden" href="#content">Skip to content</a>
 
   <div class="c-layout">
 
     <div class="c-layout__row c-layout__row--top">
 
       <div class="c-layout__container">
-        <a href="/"><img src="./dist/images/logo-refreshconf.svg"></a>
+        <a href="/"><img src="./dist/images/logo-refreshconf.svg" alt="Refresh Conference logo"></a>
         <ul class="c-navigation">
           <!--<li class="c-navigation__item"><a href="/" class="c-navigation__link">Home</a></li>-->
           <li class="c-navigation__item"><a href="speakers.html" class="c-navigation__link">Speakers</a></li>
           <li class="c-navigation__item"><a href="schedule.html" class="c-navigation__link">Schedule</a></li>
           <li class="c-navigation__item"><a href="about.html" class="c-navigation__link">About</a></li>
-          <li class="c-navigation__item"><a href="mailto:hello@refreshconference.nl" class="c-navigation__link">Mail us</a></li>
-          <li class="c-navigation__item"><a href="https://www.eventbrite.com/e/refresh-conference-2018-tickets-43969993434" class="c-navigation__link">Get your ticket</a></li>
+          <li class="c-navigation__item"><a href="mailto:hello@refreshconference.nl" class="c-navigation__link">Mail us <span class="u-visibility-hidden">(open your e-mailclient)</span></a></li>
+          <li class="c-navigation__item"><a href="https://www.eventbrite.com/e/refresh-conference-2018-tickets-43969993434" class="c-navigation__link">Get your ticket <span class="u-visibility-hidden">(external website)</span></a></li>
         </ul>
       </div>
 
-    {% block content %}{% endblock %}
+    <div id="content" tabindex="-1">
+      {% block content %}{% endblock %}
+    </div>
 
     <div class="c-bar">
       <div class="c-layout__container c-layout__container--bar">

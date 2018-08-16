@@ -35,6 +35,7 @@
 
 .c-speakers__item {
   height: 400px;
+  outline: none;
   position: relative;
 
   @media(--breakpoint-30) {
