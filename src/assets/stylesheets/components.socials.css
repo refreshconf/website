@@ -13,11 +13,8 @@
 
   &:hover,
   &:focus {
-    text-decoration: underline;
-  }
-
-  &:focus {
     color: var(--color-primary-50);
+    text-decoration: underline;
   }
 
   &:visited {
@@ -27,7 +24,7 @@
 
 .c-socials__icon {
   display: inline-block;
-  fill: var(--color-secondary-50);
+  fill: currentColor;
   height: 2.5rem;
   margin-right: .25rem;
   vertical-align: middle;
