@@ -71,7 +71,7 @@ a.c-schedule-row {
 }
 
 .c-schedule-image {
-  animation: spin 10s linear infinite;
+  animation: spin 30s linear infinite;
   animation-play-state: paused;
   background: var(--color-secondary-50);
   border-radius: 50%;
