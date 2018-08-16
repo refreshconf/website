@@ -122,7 +122,7 @@ a.c-schedule-row {
       background-image: none;
       color: var(--color-primary-50);
       content: "\1F941";
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
       height: 100%;
       left: 0;
@@ -130,5 +130,9 @@ a.c-schedule-row {
       text-align: center;
       top: 35%;
       transform: rotate(0deg);
+
+      @media (--breakpoint-10) {
+        font-size: 2rem;
+      }
   }
 }
