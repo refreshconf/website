@@ -82,7 +82,7 @@ a.c-schedule-row {
 .c-schedule-image {
   animation: spin 30s linear infinite;
   animation-play-state: paused;
-  background: var(--color-secondary-50);
+  background: var(--color-neutral-10);
   border-radius: 50%;
   flex-grow: 0;
   flex-shrink: 0;
@@ -116,5 +116,19 @@ a.c-schedule-row {
   & img {
     height: 100%;
     width: 100%;
+  }
+
+  &--tba:before {
+      background-image: none;
+      color: var(--color-primary-50);
+      content: "\1F941";
+      font-size: 2rem;
+      font-weight: 600;
+      height: 100%;
+      left: 0;
+      opacity: 1;
+      text-align: center;
+      top: 35%;
+      transform: rotate(0deg);
   }
 }
