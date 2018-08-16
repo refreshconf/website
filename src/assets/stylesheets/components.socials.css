@@ -8,11 +8,16 @@
   font-size: var(--font-size-50);
   font-weight: 500;
   margin-right: 2rem;
+  outline: none;
   text-decoration: none;
 
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+
+  &:focus {
+    color: var(--color-primary-50);
   }
 
   &:visited {
