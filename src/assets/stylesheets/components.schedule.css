@@ -2,6 +2,8 @@
   #COMPONENTS-SCHEDULE
 \*------------------------------------*/
 
+@keyframes spin { 100% { transform:rotate(360deg); } }
+
 .c-schedule-container {
   background: var(--color-white);
   box-shadow: 0 10px 40px 0 rgba(0,0,0,0.15);
@@ -23,9 +25,9 @@
     padding: 1rem 1.5rem;
   }
 
-  &-naked {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+  &--naked {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 }
 
@@ -50,6 +52,13 @@ a.c-schedule-row {
   }
 }
 
+.c-schedule-row--naked {
+
+  & .c-schedule-image:hover {
+    animation-play-state: running;
+  }
+}
+
 .c-schedule-time {
   color: #AAA0B5;
   font-size: var(--font-size-20);
@@ -62,6 +71,8 @@ a.c-schedule-row {
 }
 
 .c-schedule-image {
+  animation: spin 10s linear infinite;
+  animation-play-state: paused;
   background: var(--color-secondary-50);
   border-radius: 50%;
   flex-grow: 0;
