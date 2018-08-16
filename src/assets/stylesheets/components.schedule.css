@@ -128,11 +128,12 @@ a.c-schedule-row {
       left: 0;
       opacity: 1;
       text-align: center;
-      top: 35%;
+      top: 30%;
       transform: rotate(0deg);
 
       @media (--breakpoint-10) {
         font-size: 2rem;
+        top: 35%;
       }
   }
 }
