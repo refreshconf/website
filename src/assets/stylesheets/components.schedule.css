@@ -1,0 +1,92 @@
+/*------------------------------------*\
+  #COMPONENTS-SCHEDULE
+\*------------------------------------*/
+
+.c-schedule-container {
+  background: var(--color-white);
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,0.15);
+  max-width: 47.5rem;
+}
+
+.c-schedule-row {
+  align-items: center;
+  color: var(--color-neutral-90);
+  display: flex;
+  font-size: var(--font-size-30);
+  line-height: 1.5rem;
+  max-width: 47.5rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+
+  @media (--breakpoint-10) {
+    font-size: var(--font-size-40);
+    padding: 1rem 1.5rem;
+  }
+
+  &-even {
+    background: #F5F4F5;
+  }
+
+  &-naked {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+a.c-schedule-row {
+  &:hover,
+  &:focus {
+
+    & .c-schedule-description {
+      text-decoration: underline;
+    }
+  }
+}
+
+.c-schedule-time {
+  color: #AAA0B5;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-40);
+  text-decoration: none;
+
+  @media (--breakpoint-10) {
+    font-size: var(--font-size-40);
+  }
+}
+
+.c-schedule-image {
+  background: var(--color-secondary-50);
+  border-radius: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1rem;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  width: 50px;
+
+  @media (--breakpoint-10) {
+    height: 65px;
+    margin: 0 1.5rem;
+    width: 65px;
+  }
+
+  &:before {
+    background-image: linear-gradient(135deg, var(--color-secondary-50) 0%, #5F2BD5 100%);
+    content: "";
+    display: block;
+    height: 150%;
+    left: -80%;
+    opacity: .7;
+    position: absolute;
+    top: -1rem;
+    transform: rotate(10deg);
+    width: 100%;
+  }
+
+  & img {
+    height: 100%;
+    width: 100%;
+  }
+}

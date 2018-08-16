@@ -26,8 +26,12 @@ body {
   background: #f5f4f5 url(../images/bg-page.png) repeat-x;
   background-size: 100%;
   height: 100%;
-  margin: 5rem 0 0;
+  margin: 8rem 0 0;
   line-height: var(--line-height-default);
+
+  @media(--breakpoint-10) {
+    margin: 5rem 0 0;
+  }
 
   @media(--breakpoint-20) {
     margin: 0;
