@@ -75,7 +75,7 @@ a.c-schedule-row {
     opacity: .7;
     position: absolute;
     top: -1rem;
-    transform: rotate(10deg);
+    transform: rotate(-10deg);
     width: 100%;
   }
 
