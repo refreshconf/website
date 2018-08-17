@@ -35,6 +35,10 @@
   margin-bottom: var(--space-10);
 }
 
+.u-spacing--none {
+  margin-bottom: 0;
+}
+
 .u-line-through {
   text-decoration: line-through;
 }
