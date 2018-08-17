@@ -63,13 +63,17 @@ a.c-schedule-row {
 
 .c-schedule-row--naked {
 
+  & .c-schedule-time {
+    color: #776986;
+  }
+
   & .c-schedule-image:hover {
     animation-play-state: running;
   }
 }
 
 .c-schedule-time {
-  color: #AAA0B5;
+  color: #80708F;
   font-size: var(--font-size-20);
   font-weight: var(--font-weight-40);
   text-decoration: none;
