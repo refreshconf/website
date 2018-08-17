@@ -17,6 +17,7 @@
 .c-paragraph--large {
   font-size: var(--font-size-60);
   line-height: var(--line-height-30);
+  max-width: 700px;
 }
 
 .c-paragraph--lead {
