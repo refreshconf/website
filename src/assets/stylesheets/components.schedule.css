@@ -137,3 +137,12 @@ a.c-schedule-row {
       }
   }
 }
+
+.c-schedule-image--empty {
+  background-image: url('./../../dist/images/refresh.png');
+  background-size: cover;
+
+  &:before {
+    display: none;
+  }
+}

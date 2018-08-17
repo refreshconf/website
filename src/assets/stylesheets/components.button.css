@@ -24,6 +24,7 @@
   background: #F6EBF0;
   border: 2px solid transparent;
   color: #F2408D;
+  font-size: var(--font-size-45);
 
   &:hover,
   &:focus {
