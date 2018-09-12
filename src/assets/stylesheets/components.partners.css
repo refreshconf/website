@@ -56,11 +56,17 @@
 .c-partners--gold {
 
   & .c-partners__logo {
-    max-height: 2.25rem;
+    max-height: 2.5rem;
+    max-width: 5rem;
+
+    @media (--breakpoint-10) {
+      max-height: 3rem;
+      max-width: 8rem;
+    }
 
     @media (--breakpoint-30) {
-      max-height: 3.5rem;
-      max-width: 10rem;
+      max-height: 4rem;
+      max-width: 8rem;
     }
 
     @media (--breakpoint-50) {
@@ -73,7 +79,7 @@
 .c-partners--silver {
 
   & .c-partners__logo {
-    max-height: 2.25rem;
+    max-height: 2rem;
 
     @media (--breakpoint-30) {
       max-height: 3.5rem;
@@ -81,7 +87,6 @@
     }
 
     @media (--breakpoint-50) {
-      max-height: 3.5rem;
       max-width: 12rem;
     }
   }
@@ -90,15 +95,20 @@
 .c-partners--bronze {
 
   & .c-partners__logo {
-    max-height: 2.25rem;
+    max-height: 1.75rem;
+    max-width: 5rem;
+
+    @media (--breakpoint-10) {
+      max-height: 2em;
+      max-width: 8rem;
+    }
 
     @media (--breakpoint-30) {
-      max-height: 3.5rem;
-      max-width: 10rem;
+      max-height: 2.5em;
+      max-width: 8rem;
     }
 
     @media (--breakpoint-50) {
-      max-height: 2.5rem;
       max-width: 9.5rem;
     }
   }
