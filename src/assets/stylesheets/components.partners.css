@@ -40,12 +40,17 @@
 }
 
 .c-partners__heading {
+  border-bottom: 1px solid #efefef;
   color: #AAA1B5;
   font-size: var(--font-size-30);
   font-weight: 600;
-  margin-bottom: .5rem;
   letter-spacing: 8px;
+  margin-bottom: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: .5rem;
   text-transform: uppercase;
+  width: 80%;
 }
 
 .c-partners--gold {
@@ -93,8 +98,8 @@
     }
 
     @media (--breakpoint-50) {
-      max-height: 2.75rem;
-      max-width: 12rem;
+      max-height: 2.5rem;
+      max-width: 9.5rem;
     }
   }
 }

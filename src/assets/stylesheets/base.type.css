@@ -80,10 +80,10 @@ figure {
 
 hr {
   background-color: transparent;
-  border: solid var(--color-neutral-30);
+  border: solid var(--color-neutral-10);
   border-width: 1px 0 0;
   clear: both;
-  margin: 2.5rem var(--space-default);
+  margin: 1.5rem var(--space-default);
 }
 
 ul,
