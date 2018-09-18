@@ -1,0 +1,27 @@
+{% extends 'layout/layout.base.html' %}
+
+{% set page_title = "Blog -" %}
+{% set page_description = "Blog about the conference" %}
+
+{% block content %}
+
+  </div>
+
+  <div class="c-layout__row">
+    <div class="c-layout__container">
+      <h1 class="c-heading c-heading--huge">Blog</h1>
+
+      <div class="c-grid c-grid--content">
+        <div class="c-grid__item">
+          <p class="c-paragraph c-paragraph--large u-spacing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet placerat enim. Phasellus dui est, dictum vehicula tempor nec, rutrum vel tellus. Sed egestas molestie urna.</p>
+          <ul class="c-list-unordered">
+            <li><a href="the-factor-e.html">Meet our first supporter theFactor.E</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include 'partials/cta.html' %}
+
+{% endblock %}

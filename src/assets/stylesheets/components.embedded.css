@@ -1,0 +1,13 @@
+.c-embedded {
+  margin: 0 0 3rem 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.c-embedded iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

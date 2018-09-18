@@ -18,6 +18,17 @@
   }
 }
 
+.c-grid--content {
+
+  @media(--breakpoint-30) {
+    grid-column-gap: 0;
+  }
+
+  @media(--breakpoint-20) {
+    grid-template-columns: auto auto;
+  }
+}
+
 .c-grid--thirds {
 
   @media(--breakpoint-10) {
@@ -39,4 +50,8 @@
 .c-grid--single {
   margin: auto;
   max-width: 54rem;
+}
+
+.c-grid--single-left {
+  max-width: 44rem;
 }
