@@ -24,6 +24,7 @@
  */
 @import "components.bar.css";
 @import "components.button.css";
+@import "components.embedded.css";
 @import "components.grid.css";
 @import "components.grid-item.css";
 @import "components.header.css";
@@ -38,7 +39,6 @@
 @import "components.paragraph.css";
 @import "components.partners.css";
 @import "components.schedule.css";
-@import "components.skipto.css";
 @import "components.socials.css";
 @import "components.speakers.css";
 

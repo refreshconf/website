@@ -4,7 +4,11 @@
 
 .c-panel {
   margin: var(--space-stack-default);
-  padding: var(--space-inset-default);
+  padding: var(--space-inset-40);
+  background: var(--color-neutral-10);
+}
+
+.c-panel--neutral {
   background: var(--color-neutral-10);
 }
 

@@ -1,10 +1,14 @@
 .c-list-unordered {
   color: #90839f;
-  font-size: var(--font-size-50);
+  font-size: var(--font-size-60);
   padding-left: 1.5rem;
   line-height: var(--line-height-30);
 }
 
 .c-list-unordered li {
   margin-bottom: var(--space-25);
+}
+
+.c-list-unordered li a {
+  text-decoration: none;
 }
