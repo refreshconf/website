@@ -15,6 +15,11 @@
   z-index: 1000;
 
   @media(--breakpoint-20) {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  @media(--breakpoint-30) {
     background: none;
     box-shadow: none;
     float: right;
@@ -41,7 +46,7 @@
       display: inline;
     }
 
-    @media(--breakpoint-20) {
+    @media(--breakpoint-30) {
       margin-top: 0;
     }
   }
@@ -71,7 +76,7 @@
   }
 
   @media(--breakpoint-20) {
-    margin: 0 .75rem;
+    margin: 0 .5rem;
   }
 
   @media(--breakpoint-30) {
