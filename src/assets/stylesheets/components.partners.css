@@ -71,7 +71,7 @@
     }
 
     @media (--breakpoint-50) {
-      margin: 1.5rem 2rem;
+      margin: 1.25rem 2rem;
       max-height: 4.5rem;
       max-width: 11rem;
     }
