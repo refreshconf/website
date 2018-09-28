@@ -6,7 +6,6 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "browser-sync": "latest",
-    "gulp": "latest",
     "gulp-cssnano": "latest",
     "gulp-nunjucks": "latest",
     "gulp-postcss": "^6.0.1",
@@ -17,6 +16,7 @@
   },
   "dependencies": {
     "connect-modrewrite": "latest",
-    "del": "latest"
+    "del": "latest",
+    "gulp": "^3.9.1"
   }
 }
