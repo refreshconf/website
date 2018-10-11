@@ -70,6 +70,10 @@ a.c-schedule-row {
   & .c-schedule-image:hover {
     animation-play-state: running;
   }
+
+  & + .c-schedule-row--naked {
+    margin-top: -1rem;
+  }
 }
 
 .c-schedule-time {
