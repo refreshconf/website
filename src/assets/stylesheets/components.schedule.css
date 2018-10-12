@@ -61,13 +61,31 @@ a.c-schedule-row {
   }
 }
 
+.c-schedule-row--border {
+  border-bottom: .125rem dotted var(--color-neutral-10);
+  padding: .5rem 1rem .375rem;
+
+  @media (--breakpoint-10) {
+    font-size: var(--font-size-40);
+    padding: 1rem 1.5rem .875rem;
+  }
+
+  &:hover {
+    border-bottom-color: #F5F4F5;
+  }
+
+  & .c-schedule-time {
+    color: var(--color-neutral-90);
+  }
+}
+
 .c-schedule-row--naked {
 
   & .c-schedule-time {
     color: #776986;
   }
 
-  & .c-schedule-image:hover {
+  & .c-schedule-image--empty:hover {
     animation-play-state: running;
   }
 

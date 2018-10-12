@@ -38,6 +38,10 @@ body {
   }
 }
 
+small a {
+  color: #9b91a6;
+}
+
 [tabindex] {
   outline: none;
 }
