@@ -38,10 +38,6 @@
     display: block;
     margin-top: 1rem;
 
-    & .c-navigation__link {
-      color: var(--color-primary-50);
-    }
-
     @media(--breakpoint-10) {
       display: inline;
     }
