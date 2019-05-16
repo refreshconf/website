@@ -23,8 +23,8 @@ html {
 
 
 body {
-  background: #f5f4f5 url(../images/bg-page.png) repeat-x;
-  background-size: 100%;
+  background: #f6f5f6 url(../images/pattern.svg) 100% top no-repeat;
+  background-size: 70%;
   height: 100%;
   margin: 8rem 0 0;
   line-height: var(--line-height-default);

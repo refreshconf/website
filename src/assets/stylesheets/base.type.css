@@ -26,12 +26,12 @@ p {
  * Links
  */
 a {
-  color: #8B45ED;
+  color: var(--color-primary-50);
   cursor: pointer;
   font-weight: 500;
 
   &:hover {
-    color: var(--color-primary-70);
+    color: var(--color-primary-30);
   }
 }
 
