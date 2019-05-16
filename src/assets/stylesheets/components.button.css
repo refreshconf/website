@@ -23,6 +23,7 @@
 .c-button--secondary {
   background: #daf7dd;
   border: 2px solid transparent;
+  border-radius: 0 1rem 0 1.5rem;
   color: var(--color-primary-50);
   font-size: var(--font-size-45);
 

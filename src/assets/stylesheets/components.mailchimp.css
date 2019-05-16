@@ -7,18 +7,25 @@
   margin-bottom: 2.5rem;
 
   & input {
-    border-color: #8C958C;
-    border-radius: 0;
+    border-color: #ddd;
+    border-radius: 0 1rem 1rem 0;
     font-family: var(--font-family-body);
     font-size: 1.25rem;
+    font-weight: 500;
     height: 48px;
     margin-bottom: .5rem;
+    outline: none;
+    padding-left: 1rem;
+
+    &:focus {
+      border-color: var(--color-primary-30);
+    }
   }
 
   & .button {
     background: #daf7dd;
     border: 2px solid transparent;
-    border-radius: 0;
+    border-radius: 0 1rem 0 1rem;
     color: var(--color-primary-50);
     font-family: var(--font-family-body);
     font-weight: 600;
