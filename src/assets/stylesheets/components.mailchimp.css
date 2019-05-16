@@ -7,7 +7,7 @@
   margin-bottom: 2.5rem;
 
   & input {
-    border-color: #dad6df;
+    border-color: #8C958C;
     border-radius: 0;
     font-family: var(--font-family-body);
     font-size: 1.25rem;
@@ -16,26 +16,26 @@
   }
 
   & .button {
-    background: #F6EBF0;
+    background: #daf7dd;
     border: 2px solid transparent;
     border-radius: 0;
-    color: #F2408D;
+    color: var(--color-primary-50);
     font-family: var(--font-family-body);
     font-weight: 600;
 
     &:hover,
     &:focus {
       background: var(--color-white);
-      border: 2px dashed #F6EBF0;
-      color: #F2408D;
+      border: 2px dashed #daf7dd;
+      color: var(--color-primary-50);
     }
 
     &:visited {
-      color: #F2408D;
+      color: var(--color-primary-70);
     }
 
     &:active {
-      border: 2px solid #F2408D;
+      border: 2px solid var(--color-primary-50);
     }
   }
 }

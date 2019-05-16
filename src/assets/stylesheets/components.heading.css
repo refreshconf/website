@@ -31,3 +31,7 @@
     font-size: var(--font-size-80);
   }
 }
+
+.c-heading--2018 {
+  color: var(--color-2018-primary-50);
+}
