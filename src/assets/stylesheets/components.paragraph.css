@@ -5,7 +5,7 @@
 .c-paragraph--large,
 .c-paragraph--lead,
 .c-paragraph--medium {
-  color: #8C958C;
+  color: #9b91a6;
   max-width: 65ch;
 }
 
@@ -36,10 +36,4 @@
 .c-paragraph--small {
   color: var(--color-neutral-50);
   font-size: var(--font-size-20);
-
-  & a {
-    border-bottom: 1px dashed #efefef;
-    font-weight: 300;
-    text-decoration: none;
-  }
 }

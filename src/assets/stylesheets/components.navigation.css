@@ -49,11 +49,11 @@
 }
 
 .c-navigation__link {
-  color: #8C958C;
+  color: #AAA1B5;
   font-size: var(--font-size-30);
   font-weight: 600;
-  margin: 0 .5rem;
   outline: none;
+  margin: 0 .5rem;
   text-decoration: none;
   text-transform: lowercase;
 
@@ -64,8 +64,7 @@
   }
 
   &:active {
-    color: var(--color-primary-70);
-    border-bottom: 2px dashed var(--color-primary-70);
+    /* TODO Add CSS style */
   }
 
   @media(--breakpoint-10) {

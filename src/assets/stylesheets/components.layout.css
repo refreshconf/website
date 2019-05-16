@@ -70,13 +70,6 @@
   }
 }
 
-.c-layout__row--skyline--highlight {
-
-  @media(--breakpoint-30) {
-    background-image: url('./../../dist/images/groningen_skyline2.png');
-  }
-}
-
 .c-layout__row--line {
   border-bottom: 1px solid var(--color-neutral-10);
 }

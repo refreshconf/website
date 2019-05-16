@@ -111,18 +111,15 @@
    * Colors
    */
 
-  --color-2018-primary-50: #9859e1;
-
 
   /* Primary */
-  --color-primary-10: #4fd85b;
-  --color-primary-30: #2cc83a;
-  --color-primary-50: #239e2e;
-  --color-primary-70: #1a7422;
+  --color-primary-30: #A1A3EC;
+  --color-primary-50: #9859E1;
+  --color-primary-70: #3A3C95;
 
 
   /* Secondary */
-  --color-secondary-50: #FCE338;
+  --color-secondary-50: #F379AE;
 
 
   /* Success and positive colors */

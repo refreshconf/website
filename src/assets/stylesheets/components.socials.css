@@ -4,7 +4,7 @@
 
 .c-socials__link {
   border: 0;
-  color: var(--color-primary-50);
+  color: var(--color-secondary-50);
   font-size: var(--font-size-50);
   font-weight: 500;
   margin-right: 2rem;
@@ -13,12 +13,12 @@
 
   &:hover,
   &:focus {
-    color: var(--color-primary-30);
+    color: var(--color-primary-50);
     text-decoration: underline;
   }
 
   &:visited {
-    color: var(--color-secondary-70);
+    color: var(--color-secondary-50);
   }
 }
 

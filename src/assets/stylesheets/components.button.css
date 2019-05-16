@@ -21,31 +21,31 @@
 }
 
 .c-button--secondary {
-  background: #daf7dd;
+  background: #F6EBF0;
   border: 2px solid transparent;
-  color: var(--color-primary-50);
+  color: #F2408D;
   font-size: var(--font-size-45);
 
   &:hover,
   &:focus {
     background: var(--color-white);
-    border: 2px dashed #daf7dd;
-    color: var(--color-primary-50);
+    border: 2px dashed #F6EBF0;
+    color: #F2408D;
   }
 
   &:visited {
-    color: var(--color-primary-70);
+    color: #F2408D;
   }
 
   &:active {
-    border: 2px solid var(--color-primary-50);
+    border: 2px solid #F2408D;
   }
 }
 
 .c-button--diapositve {
   background: var(--color-white);
   border: 2px solid transparent;
-  color: var(--color-primary-70);
+  color: #F45D9E;
 
   &:hover,
   &:focus {
@@ -53,7 +53,7 @@
   }
 
   &:visited {
-    color: var(--color-primary-70);
+    color: #F45D9E;
   }
 
   &:active {
