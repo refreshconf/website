@@ -62,11 +62,13 @@
 
 .c-header-content {
   background: var(--color-white);
+  border-top-right-radius: 2rem;
   box-shadow: 0 0 64px rgba(0,0,0,.15);
   grid-column: 1 / span 10;
   grid-row: 1 / span 2;
 
   @media(--breakpoint-20) {
+    border-radius: 0;
     grid-column: 4 / span 7;
     grid-row: 1;
   }

@@ -25,6 +25,7 @@
 .u-float-right { float: right; }
 
 .u-spacing {
+  margin-bottom: .5rem;
 
   @media (--breakpoint-20) {
     margin-bottom: calc(var(--space-default) * 2);

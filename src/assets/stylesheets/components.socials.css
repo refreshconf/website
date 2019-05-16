@@ -18,7 +18,7 @@
   }
 
   &:visited {
-    color: var(--color-secondary-70);
+    color: var(--color-primary-70);
   }
 }
 

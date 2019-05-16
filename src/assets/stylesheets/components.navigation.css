@@ -33,19 +33,6 @@
 
 .c-navigation__item {
   display: inline;
-
-  &:last-child {
-    display: block;
-    margin-top: 1rem;
-
-    @media(--breakpoint-10) {
-      display: inline;
-    }
-
-    @media(--breakpoint-30) {
-      margin-top: 0;
-    }
-  }
 }
 
 .c-navigation__link {
