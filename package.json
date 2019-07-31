@@ -1,6 +1,6 @@
 {
   "name": "refresh-conference",
-  "description": "Refresh Conference 2018",
+  "description": "Refresh Conference 2019",
   "version": "1.0.0",
   "author": "Refresh Team",
   "main": "gulpfile.js",
@@ -8,15 +8,16 @@
     "browser-sync": "latest",
     "gulp-cssnano": "latest",
     "gulp-nunjucks": "latest",
-    "gulp-postcss": "^6.0.1",
+    "gulp-postcss": "latest",
     "gulp-sourcemaps": "latest",
-    "lodash": "^4.17.4",
-    "postcss-cssnext": "^2.4.0",
-    "postcss-import": "^8.0.2"
+    "lodash": "^4.17.15",
+    "postcss-cssnext": "latest",
+    "postcss-import": "latest"
   },
   "dependencies": {
     "connect-modrewrite": "latest",
     "del": "latest",
-    "gulp": "^3.9.1"
+    "gulp": "latest",
+    "gulp-import-css": "^0.1.3"
   }
 }
