@@ -29,6 +29,10 @@
     width: 100%;
     z-index: 2;
   }
+
+  & .c-media__image {
+    filter: grayscale();
+  }
 }
 
 .c-media--overlay--rotate {
