@@ -80,13 +80,6 @@
         -webkit-backface-visibility: hidden;
       }
     }
-
-    &:focus {
-
-      &::before {
-        opacity: .9;
-      }
-    }
   }
 
   &::after {
