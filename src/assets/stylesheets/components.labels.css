@@ -1,0 +1,9 @@
+.c-label {
+  background: #daf7dd;
+  border-radius: 1.5rem;
+  color: var(--color-primary-50);
+  display: inline-block;
+  font-size: 1.125rem;
+  margin-right: .5rem;
+  padding: .5rem 1rem;
+}
