@@ -258,3 +258,8 @@
     font-size: 1.75rem;
     line-height: 2.25rem;
 }
+
+.c-speakers__subject--xsmall {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
