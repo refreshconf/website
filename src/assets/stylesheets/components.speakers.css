@@ -193,11 +193,11 @@
 }
 
 .c-speakers .c-speakers__item--duo {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  margin-top: 4rem;
 
   @media(--breakpoint-30) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 4rem;
 
     &:hover,
     &:focus {
