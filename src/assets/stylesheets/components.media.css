@@ -35,6 +35,13 @@
   }
 }
 
+.c-media--overlay--light {
+
+  &::after {
+    opacity: .4;
+  }
+}
+
 .c-media--overlay--rotate {
 
   &::after {
