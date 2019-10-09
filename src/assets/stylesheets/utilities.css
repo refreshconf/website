@@ -24,6 +24,11 @@
 
 .u-float-right { float: right; }
 
+.u-sep {
+  color: var(--color-neutral-30);
+  margin: 0 .5rem;
+}
+
 .u-spacing {
   margin-bottom: .5rem;
 
