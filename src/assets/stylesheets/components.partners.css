@@ -32,7 +32,7 @@
 
 .c-partners__logo {
   display: block;
-  transition: all .2s ease-out;
+  transition: transform .1s ease;
 
   &:hover {
     transform: scale(1.1);
@@ -74,6 +74,27 @@
       margin: 1.25rem 2rem;
       max-height: 4.5rem;
       max-width: 11rem;
+    }
+  }
+
+  & .c-partners__logo--large {
+
+    @media (--breakpoint-30) {
+      max-width: 9rem;
+      width: 9rem;
+    }
+
+    @media (--breakpoint-50) {
+      max-width: 12rem;
+      width: 12rem;
+    }
+  }
+
+  & .c-partners__logo--label {
+    margin: 0 0 1rem 0;
+
+    @media (--breakpoint-50) {
+      margin: 1.5rem 0;
     }
   }
 }
