@@ -6,7 +6,9 @@
 
 .c-schedule-container {
   background: var(--color-white);
+  border-radius: 0 1rem 0 1.5rem;
   box-shadow: 0 10px 40px 0 rgba(0,0,0,0.15);
+  overflow: hidden;
   max-width: 47.5rem;
 }
 
@@ -84,7 +86,11 @@ a.c-schedule-row {
   }
 
   & .c-schedule-time {
-    color: var(--color-neutral-50);
+    color: var(--color-neutral-90);
+  }
+
+  & .c-schedule-placeholder {
+    height: 40px;
   }
 }
 
