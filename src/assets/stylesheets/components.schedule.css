@@ -6,10 +6,15 @@
 
 .c-schedule-container {
   background: var(--color-white);
-  border-radius: 0 1rem 0 1.5rem;
   box-shadow: 0 10px 40px 0 rgba(0,0,0,0.15);
   overflow: hidden;
+  margin: 0 -1rem;
   max-width: 47.5rem;
+
+  @media (--breakpoint-10) {
+    border-radius: 0 1rem 0 1.5rem;
+    margin: 0;
+  }
 }
 
 .c-schedule-row {
@@ -28,8 +33,11 @@
   }
 
   &--naked {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 2rem -1rem;
+
+    @media (--breakpoint-10) {
+      margin: 2rem 0;
+    }
   }
 
   &:hover {
@@ -74,11 +82,9 @@ a.c-schedule-row {
 
 .c-schedule-row--border {
   border-bottom: .125rem dotted var(--color-neutral-10);
-  padding: .5rem 1rem .375rem;
 
   @media (--breakpoint-10) {
     font-size: var(--font-size-40);
-    padding: 1rem 1.5rem .875rem;
   }
 
   &:hover {
@@ -87,10 +93,6 @@ a.c-schedule-row {
 
   & .c-schedule-time {
     color: var(--color-neutral-90);
-  }
-
-  & .c-schedule-placeholder {
-    height: 40px;
   }
 }
 
