@@ -10,6 +10,7 @@
   overflow: hidden;
   margin: 0 -1rem;
   max-width: 47.5rem;
+  padding: .75rem 0;
 
   @media (--breakpoint-10) {
     border-radius: 0 1rem 0 1.5rem;
@@ -77,22 +78,6 @@ a.c-schedule-row {
       left: 0;
       opacity: 0;
     }
-  }
-}
-
-.c-schedule-row--border {
-  border-bottom: .125rem dotted var(--color-neutral-10);
-
-  @media (--breakpoint-10) {
-    font-size: var(--font-size-40);
-  }
-
-  &:hover {
-    border-bottom-color: #F5F4F5;
-  }
-
-  & .c-schedule-time {
-    color: var(--color-neutral-90);
   }
 }
 
