@@ -201,3 +201,7 @@ a.c-schedule-row {
     display: none;
   }
 }
+
+.c-schedule-speaker {
+  display: block;
+}
