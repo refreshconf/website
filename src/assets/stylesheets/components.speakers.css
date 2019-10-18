@@ -53,6 +53,7 @@
 
   & .c-speakers__item {
     height: 350px;
+    pointer-events: none;
 
     &::after {
       height: 80%;
