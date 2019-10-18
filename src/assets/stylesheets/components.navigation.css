@@ -36,7 +36,7 @@
 }
 
 .c-navigation__link {
-  color: #8C958C;
+  color: var(--color-neutral-50);
   font-size: var(--font-size-30);
   font-weight: 600;
   margin: 0 .5rem;
