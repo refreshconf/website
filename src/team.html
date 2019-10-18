@@ -1,0 +1,71 @@
+{% extends 'layout/layout.base.html' %}
+
+{% set page_title = "Team -" %}
+{% set page_description = "Check out our Conference team" %}
+
+{% block content %}
+
+  <div class="c-layout__row" id="team">
+    <div class="c-layout__container u-spacing">
+      <h2 class="c-heading c-heading--large">Our team</h2>
+      <p class="c-paragraph c-paragraph--large u-spacing--large">
+        Refresh Conference 2019 is brought to you by these awesome volunteers:
+      </p>
+
+      <div class="c-grid c-grid--thirds c-speakers">
+        <div class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Hester van Wijk</h3>
+          </hgroup>
+        </div>
+        <div class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Sythe Veenje</h3>
+          </hgroup>
+        </div>
+        <div class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Rebecca Brands</h3>
+          </hgroup>
+        </div>
+        <div class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Patrick Loonstra</h3>
+          </hgroup>
+        </div>
+        <div href="the-forms-boss-battle-and-how-to-avoid-it" class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('./dist/images/team--joel_kuijten.png')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Joël Kuijten</h3>
+          </hgroup>
+        </div>
+        <div href="become-limitless-with-memory-techniques" class="c-speakers__item">
+          <div class="c-speakers__img" style="background-image: url('./dist/images/team--ron_van_de_graaf.png')"></div>
+          <hgroup class="c-speakers__content">
+            <h3 class="c-speakers__speaker">Ron van de Graaf</h3>
+          </hgroup>
+        </div>
+      </div>
+    </div>
+
+    <div class="c-layout__container">
+      <h2 class="c-heading c-heading--large">Thanks to</h2>
+      <p class="c-paragraph c-paragraph--large">
+        This conference would not have been possible without the help of the following people:
+      </p>
+      <ul class="c-list-unordered c-paragraph--large">
+        <li>Luuk Hartsema</li>
+        <li>Aljan Scholtens</li>
+        <li>Tom Offringa</li>
+        <li>Ernstjan van Dam</li>
+      </ul>
+    </div>
+  </div>
+
+  {% include 'partials/cta2.html' %}
+
+{% endblock %}

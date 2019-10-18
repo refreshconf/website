@@ -45,6 +45,21 @@
   }
 }
 
+#team {
+
+  & .c-speakers__img::before {
+    height: 40%;
+  }
+
+  & .c-speakers__item {
+    height: 350px;
+
+    &::after {
+      height: 80%;
+    }
+  }
+}
+
 .c-speakers__item {
   height: 400px;
   outline: none;
