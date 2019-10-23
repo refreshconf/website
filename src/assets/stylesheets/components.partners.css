@@ -10,10 +10,6 @@
   list-style: none;
   lost-utility: clearfix;
   margin-bottom: 4rem;
-
-  @media (--breakpoint-30) {
-    background: none;
-  }
 }
 
 .c-partners__item {
