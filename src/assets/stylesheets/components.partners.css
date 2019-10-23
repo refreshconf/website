@@ -31,7 +31,7 @@
 }
 
 .c-partners__logo {
-  display: block;
+  display: inline-block;
   transition: transform .1s ease;
 
   &:hover {
