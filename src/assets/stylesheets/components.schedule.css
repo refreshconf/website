@@ -4,6 +4,11 @@
 
 @keyframes spin { 100% { transform:rotate(360deg); } }
 
+@keyframes fadeinout {
+  25%, 50% { opacity: 1; }
+  12.5%, 87.5% { opacity: 0; }
+}
+
 .c-schedule-container {
   background: var(--color-white);
   box-shadow: 0 10px 40px 0 rgba(0,0,0,0.15);
@@ -140,11 +145,21 @@ a.c-schedule-row {
     top: -1rem;
     transform: rotate(-10deg);
     width: 100%;
+    z-index: 10;
   }
 
   & img {
     height: 100%;
     width: 100%;
+  }
+
+  & img + img {
+    animation: fadeinout 10s linear infinite;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 5;
   }
 
   &--tba:before {
