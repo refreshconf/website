@@ -3,7 +3,12 @@
 \*------------------------------------*/
 
 .c-logo {
+  display: none;
   margin-bottom: -1rem;
   vertical-align: top;
   width: 14.375rem;
+
+  @media(--breakpoint-10) {
+    display: inline;
+  }
 }

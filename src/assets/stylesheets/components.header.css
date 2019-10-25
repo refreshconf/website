@@ -2,7 +2,11 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 2, 1fr;
-  margin-bottom: 2rem;
+  margin: auto -1rem 2rem;
+
+  @media(--breakpoint-10) {
+    margin: auto 0 2rem;
+  }
 
   @media(--breakpoint-50) {
     margin: 0 -4rem 6rem;
@@ -19,9 +23,13 @@
   grid-row: 1;
   margin-bottom: -2rem;
   min-height: 16rem;
-  padding: var(--space-inset-50) var(--space-inset-40);
+  padding: var(--space-inset-50) var(--space-inset-30);
   position: relative;
   z-index: 1;
+
+  @media(--breakpoint-10) {
+    padding: var(--space-inset-50) var(--space-inset-40);
+  }
 
   @media(--breakpoint-20) {
     background-position: 50% 50%;
@@ -93,7 +101,11 @@
 .c-header-text {
   grid-column: 1 / span 10;
   grid-row: 2;
-  padding: var(--space-inset-50) var(--space-inset-40);
+  padding: var(--space-inset-50) var(--space-inset-30) var(--space-inset-40);
+
+  @media(--breakpoint-10) {
+    padding: var(--space-inset-50) var(--space-inset-40);
+  }
 
   @media(--breakpoint-20) {
     grid-column: 6 / span 5;

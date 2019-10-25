@@ -10,13 +10,18 @@
   list-style: none;
   lost-utility: clearfix;
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .c-partners__item {
   display: flex;
   flex-flow: column nowrap;
   line-height: 2.25rem;
-  margin: 1.5rem 3rem;
+  margin: 1.5rem 1.25rem;
+
+  @media(--breakpoint-10) {
+    margin: 1.5rem 3rem;
+  }
 }
 
 .c-partners__link {
@@ -52,24 +57,17 @@
 .c-partners--gold {
 
   & .c-partners__logo {
-    max-height: 2.5rem;
-    max-width: 5rem;
-
-    @media (--breakpoint-10) {
-      max-height: 3rem;
-      max-width: 8rem;
-    }
+    max-height: 4rem;
+    max-width: 8rem;
 
     @media (--breakpoint-30) {
       margin: 1rem;
-      max-height: 4rem;
-      max-width: 8rem;
+      max-height: 4.5rem;
+      max-width: 11rem;
     }
 
     @media (--breakpoint-50) {
       margin: 1.25rem 2rem;
-      max-height: 4.5rem;
-      max-width: 11rem;
     }
   }
 
@@ -98,13 +96,8 @@
 .c-partners--silver {
 
   & .c-partners__logo {
-    max-height: 2.125rem;
-    max-width: 5rem;
-
-    @media (--breakpoint-10) {
-      max-height: 2.5rem;
-      max-width: 8rem;
-    }
+    max-height: 2.5rem;
+    max-width: 7.5rem;
 
     @media (--breakpoint-30) {
       max-height: 3.125em;

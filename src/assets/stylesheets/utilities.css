@@ -18,7 +18,12 @@
 
 .u-text-align-right { text-align: right; }
 
-.u-text-align-center { text-align: center; }
+.u-text-align-center {
+
+  @media(--breakpoint-10) {
+    text-align: center;
+  }
+}
 
 .u-float-left { float: left; }
 
@@ -35,16 +40,17 @@
 }
 
 .u-spacing {
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 
-  @media (--breakpoint-20) {
+  @media(--breakpoint-20) {
     margin-bottom: calc(var(--space-default) * 2);
   }
 }
 
 .u-spacing--large {
+  margin-bottom: 1.5rem;
 
-  @media (--breakpoint-20) {
+  @media(--breakpoint-20) {
     margin-bottom: calc(var(--space-default) * 4);
   }
 }

@@ -14,7 +14,11 @@
  * Set up a row for full width styling
  */
 .c-layout__row {
-  padding: var(--space-50) 0;
+  padding: var(--space-30) 0;
+
+  @media(--breakpoint-10) {
+    padding: var(--space-50) 0;
+  }
 }
 
 .c-layout__row--full-height {

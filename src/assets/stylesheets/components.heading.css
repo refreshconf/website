@@ -21,8 +21,12 @@
 }
 
 .c-heading--large {
-  font-size: var(--font-size-70);
+  font-size: var(--font-size-60);
   line-height: 1.25em;
+
+  @media(--breakpoint-20) {
+    font-size: var(--font-size-70);
+  }
 }
 
 .c-heading--huge {

@@ -10,9 +10,14 @@
   position: fixed;
   margin-left: -1rem;
   margin-right: -1rem;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 1000;
+
+  @media(--breakpoint-10) {
+    text-align: left;
+  }
 
   @media(--breakpoint-20) {
     margin-left: -2rem;
@@ -33,6 +38,14 @@
 
 .c-navigation__item {
   display: inline;
+
+  &:last-child {
+    display: none;
+
+    @media(--breakpoint-10) {
+      display: inline;
+    }
+  }
 }
 
 .c-navigation__link {
