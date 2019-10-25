@@ -100,7 +100,7 @@
     max-width: 7.5rem;
 
     @media (--breakpoint-30) {
-      max-height: 3.5em;
+      max-height: 4em;
       max-width: 9.5rem;
     }
   }
