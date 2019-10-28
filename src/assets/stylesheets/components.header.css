@@ -15,8 +15,6 @@
 
 .c-header-image {
   background: var(--color-primary-50);
-  background-position: 50% 25%;
-  background-size: cover;
   border-radius: .125rem 2rem .125rem 3.5rem;
   display: grid;
   grid-column: 1 / span 10;

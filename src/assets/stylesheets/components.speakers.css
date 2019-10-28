@@ -21,15 +21,20 @@
 
 .c-speakers__img {
   background: #ccc;
-  background-position: 50% 15%;
-  background-size: cover;
   border-radius: 2rem .125rem 3.5rem .125rem;
   content: "";
-  filter: grayscale();
+  display: block;
   height: 100%;
   overflow: hidden;
   width: 100%;
   transition: transform .2s ease-out;
+
+  & img {
+    filter: grayscale();
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
 
   &::before {
     background: rgba(0,0,0,.5);
