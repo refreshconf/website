@@ -247,6 +247,7 @@
 }
 
 .c-speakers__item--host {
+  pointer-events: none;
 
   & .c-speakers__img {
     border-radius: .125rem 2rem .125rem 3.5rem;
