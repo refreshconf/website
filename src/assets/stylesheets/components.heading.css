@@ -15,11 +15,6 @@
   font-size: var(--font-size-50);
 }
 
-/* Default */
-.c-heading--medium {
-
-}
-
 .c-heading--large {
   font-size: var(--font-size-60);
   line-height: 1.25em;

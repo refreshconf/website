@@ -21,22 +21,37 @@
   display: grid;
   grid-column: 1 / span 10;
   grid-row: 1;
+  overflow: hidden;
   margin-bottom: -2rem;
   min-height: 16rem;
-  padding: var(--space-inset-50) var(--space-inset-30);
   position: relative;
   z-index: 1;
-
-  @media(--breakpoint-10) {
-    padding: var(--space-inset-50) var(--space-inset-40);
-  }
 
   @media(--breakpoint-20) {
     background-position: 50% 50%;
     grid-column: 1 / span 5;
     height: 100%;
     margin-top: 2rem;
-    padding: var(--space-inset-50);
+  }
+
+  & .c-header-heading {
+    bottom: 3.5rem;
+    left: 1rem;
+    position: absolute;
+
+    @media(--breakpoint-10) {
+      left: 2rem;
+    }
+
+    @media(--breakpoint-20) {
+      left: 3.5rem;
+    }
+  }
+
+  & img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 
   &::after {

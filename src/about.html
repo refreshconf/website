@@ -7,7 +7,12 @@
 
     <div class="c-layout__container">
       <div class="c-header">
-        <div class="c-header-image" style="background-image: url('./dist/images/header-refresh-2.jpg')">
+        <div class="c-header-image">
+          <picture>
+            <source type="image/webp" srcset="./dist/images/header-refresh-2.webp">
+            <source type="image/jpeg" srcset="./dist/images/header-refresh-2.jpg">
+            <img src="./dist/images/header-refresh-2.jpg" class="c-media c-media__image u-spacing--none" alt="">
+          </picture>
         </div>
         <div class="c-header-content">
         </div>
