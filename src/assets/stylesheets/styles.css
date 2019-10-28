@@ -14,7 +14,6 @@
  */
 @import "base.page.css";
 @import "base.type.css";
-@import "base.quote.css";
 
 
 /**
@@ -27,7 +26,6 @@
 @import "components.grid-item.css";
 @import "components.header.css";
 @import "components.heading.css";
-/*@import "components.icons.css";*/
 @import "components.labels.css";
 @import "components.layout.css";
 @import "components.lists.css";
