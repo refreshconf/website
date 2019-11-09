@@ -8,7 +8,7 @@
   font-size: var(--font-size-40);
   font-weight: 600;
   line-height: 1.5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   text-align: left;
   text-decoration: none;
   vertical-align: center;
@@ -26,6 +26,7 @@
   border-radius: 0 1rem 0 1.5rem;
   color: var(--color-primary-50);
   font-size: var(--font-size-45);
+  margin-right: .5rem;
 
   &:hover,
   &:focus {
