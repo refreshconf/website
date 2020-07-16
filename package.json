@@ -10,7 +10,7 @@
     "gulp-nunjucks": "latest",
     "gulp-postcss": "^6.0.1",
     "gulp-sourcemaps": "latest",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.0.2"
   },
