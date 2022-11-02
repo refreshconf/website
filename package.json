@@ -17,6 +17,6 @@
   "dependencies": {
     "connect-modrewrite": "latest",
     "del": "latest",
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   }
 }
