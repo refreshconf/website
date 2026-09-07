@@ -11,9 +11,61 @@ var debounce = require('lodash/debounce');
 var nunjucks = require('gulp-nunjucks')
 var debouncedReload = debounce(browserSync.reload, 200)
 
-gulp.task('default', ['clean', 'serve'])
+function clean() {
+  return del('dist');
+}
 
-gulp.task('serve', ['build', 'watch'], function() {
+function html() {
+  return gulp.src('src/*.html')
+    .pipe(nunjucks.compile())
+    .pipe(gulp.dest('.'))
+}
+
+function images() {
+  return gulp.src('src/assets/images/*')
+    .pipe(gulp.dest('dist/images'))
+}
+
+function media() {
+  return gulp.src('src/assets/media/**/*')
+    .pipe(gulp.dest('dist/media'))
+}
+
+function scripts() {
+  return gulp.src('src/assets/scripts/*')
+    .pipe(gulp.dest('dist/scripts'))
+}
+
+function css() {
+  var processors = [
+    atImport,
+    cssnext({
+      features: {
+        filter: false,
+        autoprefixer: false
+      }
+    }),
+  ]
+  return gulp.src(['src/assets/stylesheets/styles.css'])
+    .pipe(sourcemaps.init())
+    .pipe(postcss(processors))
+    .pipe(cssnano())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/stylesheets'))
+}
+
+var build = gulp.series(clean, gulp.parallel(html, css, scripts, images, media))
+
+function watchFiles(cb) {
+  gulp.watch('src/**/*.html', html)
+  gulp.watch('src/**/*.css', css)
+  gulp.watch('src/assets/images/**/*', images)
+  gulp.watch('src/assets/media/**/*', media)
+  gulp.watch('src/assets/scripts/**/*', scripts)
+  cb()
+}
+
+function serveOnly(cb) {
   browserSync.init({
     server: {
       baseDir: ".",
@@ -24,57 +76,18 @@ gulp.task('serve', ['build', 'watch'], function() {
     open: false
   });
   gulp.watch('/').on('change', debouncedReload)
-})
+  cb()
+}
 
-gulp.task('watch', function() {
-  gulp.watch('src/**/*.html', ['html'])
-  gulp.watch('src/**/*.css', ['css'])
-  gulp.watch('src/assets/images/**/*', ['images'])
-  gulp.watch('src/assets/media/**/*', ['media'])
-  gulp.watch('src/assets/scripts/**/*', ['scripts'])
-})
+var serve = gulp.series(build, gulp.parallel(watchFiles, serveOnly))
 
-gulp.task('build', ['html', 'clean', 'css', 'scripts', 'images', 'media'])
-
-gulp.task('clean', function(cb) {
-  return del('dist');
-});
-
-gulp.task('html', () =>
-  gulp.src('src/*.html')
-   .pipe(nunjucks.compile())
-   .pipe(gulp.dest(''))
-)
-
-gulp.task('images', () =>
-  gulp.src('src/assets/images/*')
-    .pipe(gulp.dest('dist/images'))
-)
-
-gulp.task('media', () =>
-  gulp.src('src/assets/media/**/*')
-    .pipe(gulp.dest('dist/media'))
-)
-
-gulp.task('scripts', () =>
-  gulp.src('src/assets/scripts/*')
-    .pipe(gulp.dest('dist/scripts'))
-)
-
-gulp.task("css", function() {
-  var processors = [
-    atImport,
-    cssnext({
-      features: {
-        filter: false,
-        autoprefixer: false
-      }
-    }),
-  ]
-  gulp.src(['src/assets/stylesheets/styles.css'])
-    .pipe(sourcemaps.init())
-    .pipe(postcss(processors))
-    .pipe(cssnano())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/stylesheets'))
-})
+exports.clean = clean
+exports.html = html
+exports.images = images
+exports.media = media
+exports.scripts = scripts
+exports.css = css
+exports.build = build
+exports.watch = watchFiles
+exports.serve = serve
+exports.default = serve
